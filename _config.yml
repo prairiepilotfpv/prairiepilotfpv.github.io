@@ -24,11 +24,6 @@ author: Alex
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
 
 ################
 # --- Logo --- #
@@ -54,13 +49,13 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
+  email: "prairiepilotfpv@gmail.com"
   # rss: true  # remove this line if you don't want to show an RSS link at the bottom
   #  facebook: 
-  # github: daattali
+github: prairiepiolotfpv 
   # twitter: daattali
   # patreon: DeanAttali
-  # youtube: "@daattali"
+youtube: "@prairiepilot8166"
 #  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
@@ -280,6 +275,24 @@ defaults:
       path: "" # any file that's not a post will be a "page" layout by default
     values:
       layout: "page"
+
+
+# Jekyll Compose settings
+jekyll_compose:
+  default_front_matter:
+    drafts:
+      title: 
+      cover-img:
+      category:
+      tags:
+      layout: "post"
+    posts:
+      title: 
+      cover-img:
+      category:
+      tags:
+      readtime: true
+      layout: "post"
 
 # Exclude these files from production site
 exclude:
