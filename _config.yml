@@ -7,7 +7,7 @@
 
 # My changes or fixes
 
-exclude: "vendor"
+exclude: vendor
 
 ############################
 # --- Required options --- #
