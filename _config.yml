@@ -24,6 +24,8 @@ author: Alex
 ###############################################
 
 navbar-links:
+  About Me: 'aboutme'
+  Posts: '/index'
 
 ################
 # --- Logo --- #
