@@ -24,8 +24,8 @@ author: Alex
 ###############################################
 
 navbar-links:
-  About Me: 'aboutme'
   Posts: '/index'
+  About Me: 'aboutme'
 
 ################
 # --- Logo --- #
@@ -33,7 +33,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.png"
+# avatar: "/assets/img/avatar-icon.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -129,14 +129,14 @@ navbar-var-length: false
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#EAEAEA"
+navbar-col: "#E1FFFD"
 navbar-text-col: "#404040"
 navbar-border-col: "#DDDDDD"
 page-col: "#FFFFFF"
-text-col: "#404040"
+text-col: "#212C2B"
 link-col: "#008AFF"
 hover-col: "#0085A1"
-footer-col: "#EAEAEA"
+footer-col: "#E1FFFD"
 footer-text-col: "#777777"
 footer-link-col: "#404040"
 footer-hover-col: "#0085A1"
