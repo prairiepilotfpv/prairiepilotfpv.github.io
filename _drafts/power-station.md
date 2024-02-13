@@ -1,0 +1,25 @@
+---
+
+layout: post
+title: DIY Power Station Terrain
+cover-img:
+category: [Minis, Terrain]
+tags: [minis,terrain,diy,3Dprinting,Ender5]
+
+---
+
+# Finally some terrain!
+
+I need stuff on my table besides guys!
+
+## Why?
+
+I really want to play with the minis I have been *feverishly* printing and painting these many months. I have the Frostgrave rule book and probably more than enough minis to field a few warbands. I also have a subscription to One Page Rules and could get a second squad up to give it a shot. I have dice, enough 3D printers to make any accessories I might need, I have everything I need except any terrain that will work for a game...
+
+When I say terrain, I mean larger pieces that will affect movement and line of sight. I have some props, and some smaller bits of terrain, but I don't have anything substantial that will make the battlefield more interesting. I know I could grab some random stuff from around the house, but my wife and I both much prefer painted minis and terrain. We're both very busy, so I've got time to get it right. 
+
+I have plans for more terrain. Hopefully even cooler terrain, with some more hand made aspects, building stuff with MDF, packing foam, random garbage etc. Not just print and paint, but some fun terrain I put together my self that will really anchor a field. That is eventually, however. I don't have *any* terrain right now, so this is going to come out great!
+
+## what?
+
+This [Power Station]()

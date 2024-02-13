@@ -25,6 +25,7 @@ author: Alex
 
 navbar-links:
   Posts: '/index'
+  Projects: 'projects'
   About Me: 'aboutme'
 
 ################
