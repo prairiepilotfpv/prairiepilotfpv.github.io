@@ -8,7 +8,6 @@
 # My changes or fixes
 
 exclude: [vendor]
-
 ############################
 # --- Required options --- #
 ############################
@@ -24,8 +23,8 @@ author: Alex
 ###############################################
 
 navbar-links:
-  Posts: '/index'
-  Projects: '/projects/projects'
+  # Posts: '/index'
+  Projects: 'projects'
   About Me: 'aboutme'
 
 ################
