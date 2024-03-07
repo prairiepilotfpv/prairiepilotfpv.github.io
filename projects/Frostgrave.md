@@ -6,6 +6,15 @@ subtitle: Building our world and warriors of Frostgrave
 permalink: "projects/Frostgrave"
 
 ---
+<style>
+
+h2 {
+	text-align:center;
+}
+
+</style>
+
+
 
 Frostgrave is a tabeltop wargame set in a fantasy setting centered around looting the thawing remains of a once great city "Felstad." My wife and I have had a great time playing Magic: The Gathering and Pirates of the Sword Coast and I have been wanting another tabletop wargame for us to enjoy together. 
 
@@ -18,6 +27,5 @@ Of course any regular blog posts that are centered around Frostgrave will show u
 
 ## Posts
 
-{% for post in site.categories.Frostgrave %}
- <li><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
+
+

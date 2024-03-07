@@ -1,0 +1,6 @@
+img[src*="#border"]{
+	border: 5px solid #3B2F01;
+	border-radius: 10px;
+}
+
+
