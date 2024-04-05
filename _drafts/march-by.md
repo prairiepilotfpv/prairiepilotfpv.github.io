@@ -1,0 +1,105 @@
+---
+
+layout: post
+title: March On By
+cover-img:  "/assets/img/march-on/bust_wip_header.jpg"
+thumbnail-img: "/assets/img/march-on/march-on-thumb.jpg"
+category: Blog, Update
+tags: minis, blog, painting, gaming
+
+---
+
+# Boy, March really is over huh?
+
+Well, I planned to blog weekly, but as with most habits, it's been a struggle. 
+
+## Nothing personal
+
+Life as usual is chaotic, work, family, home-life, etc etc. I did work on quite a bit,  I just didn't record my thoughts on what I worked on, nor did I take nearly as many work in progress photos as I'd planned. Negativity aside, it was a good month, I'm not down on my self, I just wish I'd taken more pictures and written more words about it!
+
+I did take *some* photos, I even tried to write a few blog posts which spurred even more pictures! Instead of a handful of small blog posts, I'll do one, also small, blog post! About stuff that's not done, yet!
+
+## Busted
+
+---
+
+![Busted](/assets/img/march-on/bust_wip_cool_tone_side.jpg#border)
+
+---
+
+I really enjoyed the first 5-6 hours of this bust. I don't mean that sarcastically, it was a blast for hours. I wasn't glowing with excitement as I entered the double digits, but it wasn't too bad. I think I'd worked on it for at least 15 hours when I just had to set it aside. Not permamently, or even long term as I'm back at it now, but there simply wasn't anything more I could do without my eyes bleeding. 
+
+It really has been a great way to learn some of the intermediate techniques that can lift a model to that second tier of quality. You can only learn so much blending on a tiny little model, it just can't support that many colors or that much mixing. A larger piece like this let me really blend some paint and see how it works. It's about a pound of paint at this point, it's not professional work, but it's much better than I've done so far. 
+
+---
+
+![Classy Like](/assets/img/march-on/march-28-blog-stacks-4.jpg#border)
+
+---
+
+## About Gyrados
+
+Well, you saw back near the ides of March, I had printed and mounted a Gyrados for priming and painting. I did in fact prime it, and I even painted it a bit. I even went and cut out a large round ceramic base to build a water scene on. Then I just totally dropped the project. I still want to finish it, and it's actually going really well, but I can't seem to make it interesting to me at all. 
+
+---
+
+![Gyraone?](/assets/img/march-on/march-on-gyraclose.jpg#border)
+
+---
+
+I know what my hold up is, it's basically done and now I just have to figure out how I'm doing the water base. I have some water effects, and I saw a pretty good idea with common caulk, so it's not like I'm bereft when it comes to making some sort of water base. I simply can't be arsed to sit down with some gloves, some gunk, and see what I can do. All I really  need are some large, smooth shapes and then I'm going to use the water effect and some pretty opaque ink to give it that cell shaded coloring. I'm not going to try a full cartoon look but I want it to be cartoonish. 
+
+![Gryamany!](/assets/img/march-on/gyrados-scramble.jpg#border)
+
+---
+
+## The Guild Calls
+
+So, I showed a picture of a full build plate in Lychee Slicer, and boy did that not work out. I lost most of that plate. I thought it was just poor supports on my part, so I tried a single mini and it also had defects. Now I knew it was a calibration problem. This was going to happen eventually, I leveled and calibrated months and months ago and never really dialed in my settings. Clearly the entire thing had been barely printing and I just hadn't pushed it. 
+
+I quickly realized the hanger I used was throwing my level off. I cleaned everything, re-leveled with resin in the vat and started over with the Resin+ from Anycubic. I'm happy to report that after a few days tinkering and calibrating, I was back in business. That happened eventually. Before that I got super distracted. With Guild business!
+
+### Heavy Weapons
+
+---
+
+![Heavy Guy](/assets/img/march-on/wip-roundup--13-2.jpg#border)
+
+---
+
+After spending several days working on the bust I felt like I had really gotten a better feel for how mixing and blending works. I also caved and got a nice brush from my local art store. I had this [One Page Rules](https://www.myminifactory.com/object/3d-print-guild-warriors-321965) Guild Warrior with the heavy weapons option all primed and mounted to a handle. I was very frustrated with the delays finishing my Frostgrave warband and just wanted to get some paint down so I decided to take a detour. I was sort of annoyed with my self, I'd really tried to buckle down and focus on my warband, but I think this came together *really* well. 
+
+![Rail Gun](/assets/img/march-on/march-28-blog-stacks-1-2.jpg#border)
+
+
+Everything I tried seemed to just..work. All the colors blended really well, it seemed like layering really locked in for me. I ended up spending a week hyper-focusing on getting every little thing right once I really felt like I knew what I was doing. 
+
+![Good Looking](/assets/img/march-on/wip-roundup--12-2.jpg#border)
+
+Confidence is often cited as a great source of success. I've always struggled with that, but I did feel it a bit with this model. The brush, the paint, the mini, it all felt familiar and comfortable. I really gave this one everything I've got. I don't mean to be a broken record, but I really learned a lot. I learned what that even feels like, when you know it's just clicking. I was annoyed with my self for starting a new mini at first, but now I'm very glad I took the detour. 
+
+I'm not done with it yet, clearly, but I wanted to pause for a moment and just give an update with the pictures I've got handy. I think I'll finish this little guy first, he's going to look great with a proper base!
+
+## A Gathering Force
+
+So, I did eventually get a few usable miniatures from my great attempt to finally patch all the holes in my collection for Frostgrave. I printed a few at a time once I knew it would finish and slowly dialed in my exposure. This was after days of printing calibration prints when I got the chance. I don't even know if my old settings were that bad, but the prints came off so mangled I just thought it would be better to start over. 
+
+It worked but it was very frustrating. I was ready to print over a dozen soldiers of all makes and models and now I barely got 4 in 2 days. It's really maddening when your printer just won't cooperate. One of these days when I'm a little more settled with money I'm going to buy a big, nice, reliable printer and it's going to be amazing. 
+
+**Until then...the warband grows...**
+
+---
+
+![Bluish](/assets/img/march-on/wip-roundup--01.jpg#border)
+
+---
+
+## Until Next Time
+
+That was basically my March along with [My Earlier Post]({% post_url 2024-03-16-stuck-in-the-middle %}). I feel like I got a lot done, I'm going to button most of it up here in the first week of April. I'm still on the quest to finish my damn warband, and I'm sure I'll get some new paint around my birthday, which will of course require me to paint many, many minis to give them a proper evaluation. 
+
+
+
+
+
+
