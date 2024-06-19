@@ -6,14 +6,15 @@ img[src*="#border"] {
   border-radius: 10px;
   }
 
-img[src*="#circle] {
+img[src*="#circle"] {
     border-radius: 50%;
     width: 200px;
     height: 200px;
-}
+    }
 
 
 /* Custom Navbar Styles */
+
 .navbar-custom {
   background-color: #001f3f; /* Navy background color */
   border-bottom: 1px solid #444444; /* Optional darker border color */
@@ -101,4 +102,6 @@ footer a:focus {
 }
 
 /* Add specific styles for more social networks as needed */
+
+
 
