@@ -6,78 +6,7 @@ img[src*="#border"] {
   border-radius: 10px;
 }
 
-/* custom-styles.css */
-
-/* Post Preview Customizations */
-
-/* Style for post preview images to render as circles with a drop shadow */
-.post-preview .post-image {
-  display: inline-block; /* Change to inline-block to align with title */
-  vertical-align: top; /* Align the top of the image with the top of the title */
-  margin: 0 1rem 1rem 0; /* Add margin to the right and bottom */
-  width: 150px; /* Set width and height to the same value to create a circle */
-  height: 150px; /* Adjust size as needed */
-  border-radius: 50%; /* Make the image circular */
-  overflow: hidden; /* Ensure the image fits within the circular container */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Faint drop shadow */
-}
-
-.post-preview .post-image img {
-  max-width: 100%; /* Ensure the image fits within the thumbnail container */
-  height: 100%; /* Maintain aspect ratio and cover the entire container */
-  display: block; /* Ensure images are displayed as block elements */
-  object-fit: cover; /* Cover the container without stretching */
-  border-radius: 50%; /* Ensure the image itself is circular */
-}
-
-/* Ensure post titles, subtitles, and meta info are left-aligned on desktop by default */
-.post-preview .post-title,
-.post-preview .post-subtitle,
-.post-preview .post-meta {
-  text-align: left; /* Left-align text elements by default */
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Responsive Design for Post Preview */
-
-/* Hide the small image on larger screens */
-@media (min-width: 768px) {
-  .post-image-small {
-    display: none !important;
-  }
-}
-
-/* Hide the short image on smaller screens */
-@media (max-width: 767px) {
-  .post-image-short {
-    display: none !important;
-  }
-}
-
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-  .post-preview {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center-align the entire post preview content */
-  }
-
-  .post-preview .post-title,
-  .post-preview .post-subtitle,
-  .post-preview .post-meta {
-    text-align: center; /* Ensure text elements are centered on mobile */
-  }
-
-  .post-preview .post-image {
-    margin: 0 auto 1rem; /* Center the image and add some margin at the bottom */
-    display: block; /* Ensure the image is displayed as a block element */
-    float: none; /* Override float property */
-  }
-}
-
 /* Custom Navbar Styles */
-
 .navbar-custom {
   background-color: #001f3f; /* Navy background color */
   border-bottom: 1px solid #444444; /* Optional darker border color */
@@ -94,7 +23,6 @@ img[src*="#border"] {
 }
 
 /* Custom Footer Styles */
-
 footer {
   background-color: #001f3f; /* Navy background color */
   color: #FFFFFF; /* White text color */
@@ -110,7 +38,6 @@ footer a:focus {
 }
 
 /* Social Media Buttons */
-
 .footer-links .list-inline-item a {
   color: transparent; /* Transparent icon color */
   text-decoration: none;
@@ -122,7 +49,6 @@ footer a:focus {
 }
 
 /* Specific Colors for Social Media Platforms */
-
 .footer-links .list-inline-item a.email:hover,
 .footer-links .list-inline-item a.email:focus {
   color: #D44638; /* Gmail red */
@@ -169,4 +95,99 @@ footer a:focus {
 }
 
 /* Add specific styles for more social networks as needed */
+
+/* Responsive Preview Block */
+.post-preview {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .post-preview {
+    padding: 2.1875rem 0;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.post-preview .post-title {
+  font-size: 1.875rem;
+  margin-top: 0;
+}
+
+.post-preview .post-subtitle {
+  margin: 0;
+  font-weight: 300;
+  margin-bottom: 0.625rem;
+}
+
+.post-preview .post-meta {
+  color: #808080;
+  font-size: 1.125rem;
+  font-style: italic;
+  margin: 0 0 0.625rem;
+}
+
+.post-preview .post-snippet {
+  flex-grow: 1;
+}
+
+/* Circular Preview Images */
+.post-preview .post-image {
+  margin-left: auto;
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+  overflow: hidden;
+  display: block;
+}
+
+.post-preview .post-image img {
+  border-radius: 50%;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .post-preview .post-image {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .post-preview {
+    flex-direction: column;
+    align-items: center;
+  }
+  .post-preview .post-image {
+    height: 9rem;
+    width: 9rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Ensure text wraps nicely and remains responsive */
+.post-preview .post-title,
+.post-preview .post-subtitle,
+.post-preview .post-meta,
+.post-preview .post-snippet {
+  word-wrap: break-word;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 500px) {
+  .post-preview .post-title {
+    font-size: 1.5rem;
+  }
+  .post-preview .post-meta,
+  .post-preview .post-subtitle {
+    font-size: 1rem;
+  }
+  .post-preview .post-snippet {
+    font-size: 0.875rem;
+  }
+}
 
