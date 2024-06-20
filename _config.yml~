@@ -8,6 +8,8 @@
 # My changes or fixes
 
 exclude: [vendor]
+url: "https://icantstoptalking.com"
+
 ############################
 # --- Required options --- #
 ############################
@@ -54,7 +56,7 @@ social-network-links:
   email: "prairiepilotfpv@gmail.com"
   # rss: true  # remove this line if you don't want to show an RSS link at the bottom
   #  facebook: 
-  github: prairiepiolotfpv 
+  # github: prairiepiolotfpv 
   # twitter: daattali
   # patreon: DeanAttali
   youtube: "@prairiepilot8166"
@@ -93,7 +95,6 @@ rss-description: I really can't stop talking.
 share-links-active:
   reddit: true
   instagram: true
-  github: true
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer

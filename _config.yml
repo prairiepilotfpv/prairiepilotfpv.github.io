@@ -8,6 +8,8 @@
 # My changes or fixes
 
 exclude: [vendor]
+url: "https://icantstoptalking.com"
+
 ############################
 # --- Required options --- #
 ############################
