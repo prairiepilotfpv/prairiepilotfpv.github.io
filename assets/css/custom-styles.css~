@@ -97,6 +97,7 @@ footer a:focus {
 /* Add specific styles for more social networks as needed */
 
 /* Responsive Preview Block */
+/* Right-align the preview images on desktop */
 .post-preview {
   padding: 1.25rem 0;
   border-bottom: 1px solid #eee;
@@ -110,33 +111,32 @@ footer a:focus {
     padding: 2.1875rem 0;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
   }
-}
+  
+  .post-preview .post-image {
+    order: 2;
+    margin-left: 1rem;
+  }
+  
+  .post-preview .post-title,
+  .post-preview .post-subtitle,
+  .post-preview .post-meta,
+  .post-preview .post-entry {
+    text-align: left;
+  }
 
-.post-preview .post-title {
-  font-size: 1.875rem;
-  margin-top: 0;
-}
 
-.post-preview .post-subtitle {
-  margin: 0;
-  font-weight: 300;
-  margin-bottom: 0.625rem;
-}
-
-.post-preview .post-meta {
-  color: #808080;
-  font-size: 1.125rem;
-  font-style: italic;
-  margin: 0 0 0.625rem;
-}
-
+/* Ensure text wraps nicely and remains responsive */
+.post-preview .post-title,
+.post-preview .post-subtitle,
+.post-preview .post-meta,
 .post-preview .post-snippet {
-  flex-grow: 1;
+  word-wrap: break-word;
 }
 
 /* Circular Preview Images */
-.post-preview .post-image {
+.post-image {
   margin-left: auto;
   height: 12rem;
   width: 12rem;
@@ -145,36 +145,32 @@ footer a:focus {
   display: block;
 }
 
-.post-preview .post-image img {
+.post-image img {
   border-radius: 50%;
   max-height: 100%;
   max-width: 100%;
 }
 
-@media (min-width: 768px) {
-  .post-preview .post-image {
-    margin-left: 1rem;
-  }
-}
-
+/* Adjustments for smaller screens */
 @media (max-width: 767px) {
   .post-preview {
     flex-direction: column;
     align-items: center;
   }
-  .post-preview .post-image {
+  
+  .post-image {
     height: 9rem;
     width: 9rem;
     margin-bottom: 1rem;
+    align-self: flex-end;
   }
-}
 
-/* Ensure text wraps nicely and remains responsive */
-.post-preview .post-title,
-.post-preview .post-subtitle,
-.post-preview .post-meta,
-.post-preview .post-snippet {
-  word-wrap: break-word;
+  .post-title,
+  .post-subtitle,
+  .post-meta,
+  .post-snippet {
+    text-align: center;
+  }
 }
 
 /* Adjustments for smaller screens */
