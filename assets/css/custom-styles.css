@@ -6,6 +6,12 @@ img[src*="#border"] {
   border-radius: 10px;
 }
 
+/* Custom CSS to make preview images round */
+.post-preview .post-image img {
+  border-radius: 50%;
+}
+
+
 /* Custom Navbar Styles */
 .navbar-custom {
   background-color: #001f3f; /* Navy background color */
