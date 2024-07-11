@@ -6,6 +6,12 @@ img[src*="#border"] {
   border-radius: 10px;
 }
 
+/* Custom CSS to make preview images round */
+.post-preview .post-image img {
+  border-radius: 50%;
+}
+
+
 /* Custom Navbar Styles */
 .navbar-custom {
   background-color: #001f3f; /* Navy background color */
@@ -96,94 +102,8 @@ footer a:focus {
 
 /* Add specific styles for more social networks as needed */
 
-/* Responsive Preview Block */
-/* Right-align the preview images on desktop */
-.post-preview {
-  padding: 1.25rem 0;
-  border-bottom: 1px solid #eee;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-@media (min-width: 768px) {
-  .post-preview {
-    padding: 2.1875rem 0;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .post-preview .post-image {
-    order: 2;
-    margin-left: 1rem;
-  }
-  
-  .post-preview .post-title,
-  .post-preview .post-subtitle,
-  .post-preview .post-meta,
-  .post-preview .post-entry {
-    text-align: left;
-  }
-
-
-/* Ensure text wraps nicely and remains responsive */
-.post-preview .post-title,
-.post-preview .post-subtitle,
-.post-preview .post-meta,
-.post-preview .post-snippet {
-  word-wrap: break-word;
-}
-
-/* Circular Preview Images */
-.post-image {
-  margin-left: auto;
-  height: 12rem;
-  width: 12rem;
-  border-radius: 50%;
-  overflow: hidden;
-  display: block;
-}
-
-.post-image img {
-  border-radius: 50%;
-  max-height: 100%;
-  max-width: 100%;
-}
-
-/* Adjustments for smaller screens */
-@media (max-width: 767px) {
-  .post-preview {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .post-image {
-    height: 9rem;
-    width: 9rem;
-    margin-bottom: 1rem;
-    align-self: flex-end;
-  }
-
-  .post-title,
-  .post-subtitle,
-  .post-meta,
-  .post-snippet {
-    text-align: center;
-  }
-}
-
-/* Adjustments for smaller screens */
-@media (max-width: 500px) {
-  .post-preview .post-title {
-    font-size: 1.5rem;
-  }
-  .post-preview .post-meta,
-  .post-preview .post-subtitle {
-    font-size: 1rem;
-  }
-  .post-preview .post-snippet {
-    font-size: 0.875rem;
-  }
+/* Custom style for H1 headings */
+h1 {
+  color: #654321; /* Dark brown color */
 }
 

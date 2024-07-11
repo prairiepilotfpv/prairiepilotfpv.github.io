@@ -102,3 +102,8 @@ footer a:focus {
 
 /* Add specific styles for more social networks as needed */
 
+/* Custom style for H1 headings */
+h1 {
+  color: #3F2811; /* Dark brown color */
+}
+
