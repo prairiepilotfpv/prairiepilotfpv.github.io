@@ -104,6 +104,6 @@ footer a:focus {
 
 /* Custom style for H1 headings */
 h1 {
-  color: #654321; /* Dark brown color */
+  color: #3F2811; /* Dark brown color */
 }
 
