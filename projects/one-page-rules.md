@@ -1,26 +1,18 @@
 ---
 
 layout: page
-title: Frostgrave
-subtitle: Building our world and warriors of Frostgrave
-permalink: /projects/frostgrave/
+title: One Page Rules
+subtitle: Open table top war gaming!
+permalink: /projects/one-page-rules/
 
 ---
 
-Frostgrave is a tabeltop wargame set in a fantasy setting centered around looting the thawing remains of a once great city "Felstad." My wife and I have had a great time playing Magic: The Gathering and Pirates of the Sword Coast and I have been wanting another tabletop wargame for us to enjoy together. 
+I've got a good bit of a Dwarven Guild list printed and painted, and I'm excited to enjoy being a Patreon as they get better and better. Their sculpts aren't at Games Workshop levels, yet, but they're very good and always getting better. Enjoy watching me fumble around trying to decide if I want to paint fantasy or science-fiction any given day!
 
-
-After a year of, if I'm honest, farting around, I finally found the focus and orginization to get started on printing/painting enough units to cover two warbands and a nice stable of enemies to combat. This is a long term, and ongoing, project that I have wanted to document for a long time. This page will serve as a hub for my various Frostgrave related projects. Minis, terrain, story, game write-ups, anything I think of that's directly related to Frostgrave. 
-
-Of course any regular blog posts that are centered around Frostgrave will show up here, but I also have some longer term projects that I would like to document without clogging up my main blog page. 
-
----
-
-
-<!-- Post list for Frostgrave category -->
+<!-- Post list for One Page Rules category -->
 <ul class="posts-list list-unstyled" role="list">
-{% assign frostgrave_posts = site.posts | where: "category", "Frostgrave" %}
-{% for post in frostgrave_posts %}
+{% assign opr_posts = site.posts | where: "category", "OPR" %}
+{% for post in opr_posts %}
   <li class="post-preview">
     <article>
       {%- capture thumbnail -%}
