@@ -1,21 +1,28 @@
 ---
-
 layout: page
-title: Frostgrave
-subtitle: Building our world and warriors of Frostgrave
-permalink: /projects/frostgrave/
-
+title: Projects
+subtitle: A showcase of ongoing projects and progress
 ---
 
-Frostgrave is a tabeltop wargame set in a fantasy setting centered around looting the thawing remains of a once great city "Felstad." My wife and I have had a great time playing Magic: The Gathering and Pirates of the Sword Coast and I have been wanting another tabletop wargame for us to enjoy together. 
+<!-- Style for section headings and dividers -->
+<style>
+.section-heading {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 40px 0 20px;
+    color: #333;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+</style>
 
+<!-- Frostgrave Section -->
+<h1 class="section-heading"><a href="{{ site.baseurl }}/Frostgrave/">Frostgrave</a></h1>
 
-After a year of, if I'm honest, farting around, I finally found the focus and orginization to get started on printing/painting enough units to cover two warbands and a nice stable of enemies to combat. This is a long term, and ongoing, project that I have wanted to document for a long time. This page will serve as a hub for my various Frostgrave related projects. Minis, terrain, story, game write-ups, anything I think of that's directly related to Frostgrave. 
-
-Of course any regular blog posts that are centered around Frostgrave will show up here, but I also have some longer term projects that I would like to document without clogging up my main blog page. 
-
----
-
+<p>
+I'm the most excited about this. It's been a long time coming, but I'm pumped to finally see the finish line. I've got minis, I've got more and more terrain by the day, I've even got a big stack of character sheets and spell cards. I'm also thinking of some fun ways to show off all the fun stuff I've been working on.
+</p>
 
 <!-- Post list for Frostgrave category -->
 <ul class="posts-list list-unstyled" role="list">
@@ -23,6 +30,7 @@ Of course any regular blog posts that are centered around Frostgrave will show u
 {% for post in frostgrave_posts %}
   <li class="post-preview">
     <article>
+      <!-- Capture the thumbnail image -->
       {%- capture thumbnail -%}
         {% if post.thumbnail-img %}
           {{ post.thumbnail-img }}
@@ -37,6 +45,7 @@ Of course any regular blog posts that are centered around Frostgrave will show u
       {% endcapture %}
       {% assign thumbnail = thumbnail | strip %}
 
+      <!-- Display the thumbnail image if available -->
       {% if thumbnail != "" %}
       <div class="post-image">
         <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
@@ -45,6 +54,7 @@ Of course any regular blog posts that are centered around Frostgrave will show u
       </div>
       {% endif %}
 
+      <!-- Post title and subtitle -->
       <a href="{{ post.url | absolute_url }}">
         <h2 class="post-title">{{ post.title | strip_html }}</h2>
         {% if post.subtitle %}
@@ -52,6 +62,7 @@ Of course any regular blog posts that are centered around Frostgrave will show u
         {% endif %}
       </a>
 
+      <!-- Post metadata -->
       {% if post.author %}
         <span class="post-author">by <strong>{{ post.author | strip_html }}</strong></span>
       {% endif %}
@@ -60,6 +71,7 @@ Of course any regular blog posts that are centered around Frostgrave will show u
         Posted on {{ post.date | date: date_format }}
       </p>
 
+      <!-- Post excerpt and read more link -->
       <div class="post-entry">
         {% assign excerpt_length = site.excerpt_length | default: 50 %}
         {{ post.excerpt | strip_html | truncatewords: excerpt_length }}
@@ -69,9 +81,11 @@ Of course any regular blog posts that are centered around Frostgrave will show u
         {% endif %}
       </div>
 
+      <!-- Post tags -->
       {% if site.feed_show_tags != false and post.tags.size > 0 %}
       <div class="blog-tags">
         <span>Tags:</span>
+        <!-- Inline list of tags -->
         <ul class="d-inline list-inline" role="list">
           {% for tag in post.tags %}
           <li class="list-inline-item">
@@ -86,7 +100,12 @@ Of course any regular blog posts that are centered around Frostgrave will show u
 {% endfor %}
 </ul>
 
-<!-- Pagination -->
+<!-- OPR Section -->
+<h1 class="section-heading"><a href="{{ site.baseurl }}/OPR/">One Page Rules</a></h1>
+
+<!-- Similar content for OPR can go here -->
+
+<!-- Pagination for OPR section -->
 {% if paginator.total_pages > 1 %}
 <ul class="pagination main-pager">
   {% if paginator.previous_page %}
@@ -107,4 +126,3 @@ Of course any regular blog posts that are centered around Frostgrave will show u
   {% endif %}
 </ul>
 {% endif %}
-
