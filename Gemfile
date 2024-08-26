@@ -5,5 +5,11 @@ gem 'jekyll-compose', group: [:jekyll_plugins]
 gem 'tzinfo', '2.0.6'
 gem 'tzinfo-data', '1.2023.4'
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
-gemspec
+gem "jekyll-remote-theme"
+gem "csv"
+gem "base64"
+gem "jekyll-paginate"
+gem "jekyll-sitemap"
+
+# gemspec
 

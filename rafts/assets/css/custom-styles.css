@@ -1,0 +1,118 @@
+/* assets/css/custom.css */
+
+/* Custom styles for images with border */
+img[src*="#border"] {
+  border: 5px solid #3B2F01;
+  border-radius: 10px;
+}
+
+/* Custom CSS to make preview images round */
+.post-preview .post-image img {
+  border-radius: 50%;
+}
+
+
+/* Custom Navbar Styles */
+.navbar-custom {
+  background-color: #001f3f; /* Navy background color */
+  border-bottom: 1px solid #444444; /* Optional darker border color */
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link {
+  color: #FFFFFF; /* White text color */
+}
+
+.navbar-custom .navbar-nav .nav-link:hover,
+.navbar-custom .navbar-nav .nav-link:focus {
+  color: #FFD700; /* Gold color on hover/focus */
+}
+
+/* Custom Footer Styles */
+footer {
+  background-color: #001f3f; /* Navy background color */
+  color: #FFFFFF; /* White text color */
+}
+
+footer a {
+  color: #FFFFFF; /* White links */
+}
+
+footer a:hover,
+footer a:focus {
+  color: #FFD700; /* Gold on hover/focus */
+}
+
+/* Social Media Buttons */
+.footer-links .list-inline-item a {
+  color: transparent; /* Transparent icon color */
+  text-decoration: none;
+}
+
+.footer-links .list-inline-item a:hover,
+.footer-links .list-inline-item a:focus {
+  color: #FFD700; /* Gold color on hover/focus */
+}
+
+/* Specific Colors for Social Media Platforms */
+.footer-links .list-inline-item a.email:hover,
+.footer-links .list-inline-item a.email:focus {
+  color: #D44638; /* Gmail red */
+}
+
+.footer-links .list-inline-item a.github:hover,
+.footer-links .list-inline-item a.github:focus {
+  color: #333; /* GitHub black */
+}
+
+.footer-links .list-inline-item a.twitter:hover,
+.footer-links .list-inline-item a.twitter:focus {
+  color: #1DA1F2; /* Twitter blue */
+}
+
+.footer-links .list-inline-item a.facebook:hover,
+.footer-links .list-inline-item a.facebook:focus {
+  color: #3b5998; /* Facebook blue */
+}
+
+.footer-links .list-inline-item a.linkedin:hover,
+.footer-links .list-inline-item a.linkedin:focus {
+  color: #0077B5; /* LinkedIn blue */
+}
+
+.footer-links .list-inline-item a.instagram:hover,
+.footer-links .list-inline-item a.instagram:focus {
+  color: #E4405F; /* Instagram gradient */
+}
+
+.footer-links .list-inline-item a.youtube:hover,
+.footer-links .list-inline-item a.youtube:focus {
+  color: #FF0000; /* YouTube red */
+}
+
+.footer-links .list-inline-item a.telegram:hover,
+.footer-links .list-inline-item a.telegram:focus {
+  color: #0088cc; /* Telegram blue */
+}
+
+.footer-links .list-inline-item a.discord:hover,
+.footer-links .list-inline-item a.discord:focus {
+  color: #7289DA; /* Discord blurple */
+}
+
+/* Add specific styles for more social networks as needed */
+
+/* Custom style for H1 headings */
+h1 {
+  color: #3F2811; /* Dark brown color */
+}
+
+
+/* Custom style for H1 headings inside post header */
+.post-heading h1 {
+  color: #3F2811; /* Dark brown color */
+  text-shadow: 
+    -1px -1px 0 #fff,  
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff; /* White outline */
