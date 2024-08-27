@@ -1,10 +1,10 @@
 ---
 
 layout: post
-title:Time Fly's
+title: Time Fly's
 cover-img:
 category:
-tags:blog, update,life,irl
+tags: blog, update,life,irl
 
 ---
 
