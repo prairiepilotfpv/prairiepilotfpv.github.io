@@ -10,6 +10,9 @@ gem "csv"
 gem "base64"
 gem "jekyll-paginate"
 gem "jekyll-sitemap"
+gem 'kramdown-parser-gfm'
+gem 'webrick'
+
 
 # gemspec
 
