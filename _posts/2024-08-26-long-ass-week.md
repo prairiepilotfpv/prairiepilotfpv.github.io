@@ -1,14 +1,12 @@
 ---
-
 layout: post
 title: Time Fly's
 cover-img:
 category:
-tags: blog, update,life,irl
-
+tags: [blog, update,life,irl]
+date: 2024-08-26 23:37 -0400
 ---
-
-# Time Fly's
+# It really does! 
 
 As usual, I've been gone for far too long. Another catch up post, another attempt to get this thing up and running on a regular basis. I'm not gonna promise to anyone, even my self, that I'm going to get into better habits re my blog, but I'm sure gonna try. 
 
