@@ -1,7 +1,15 @@
 ---
+
 layout: post
-title:
+title: Weekly Blog
 cover-img:
 category:
-tags:
+tags: [blog,post,update,September]
+
 ---
+
+# Title/subtitle
+
+## Intro
+
+Goodness, it's september! Already!
