@@ -1,13 +1,15 @@
 ---
-
 layout: post
 title: Falling In
 cover-img:
 category: Blog
-tags: [blog,post,September,update]
-
+tags:
+- blog
+- post
+- September
+- update
+date: 2024-09-03 09:47 -0400
 ---
-
 # With The Season
 
 ## Another week, some more minis
