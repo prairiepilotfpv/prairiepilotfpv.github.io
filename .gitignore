@@ -23,3 +23,7 @@ _drafts/i-won-t-july-to-you.md
 *.swp
 *.md~
 *.un~
+_layouts/post.html~
+assets/css/.custom-styles.css.un~
+assets/css/custom-styles.css~
+webpage.zip

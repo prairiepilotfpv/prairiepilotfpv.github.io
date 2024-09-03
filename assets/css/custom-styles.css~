@@ -107,3 +107,12 @@ h1 {
   color: #3F2811; /* Dark brown color */
 }
 
+
+/* Custom style for H1 headings inside post header */
+.post-heading h1 {
+  color: #3F2811; /* Dark brown color */
+  text-shadow: 
+    -1px -1px 0 #fff,  
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff; /* White outline */
