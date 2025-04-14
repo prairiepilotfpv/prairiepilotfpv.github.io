@@ -47,3 +47,11 @@ This isn't a come to Jesus story. This wasn't the moment that changed it all. It
 I let my self build a whole system in my head to punish my self no matter what. I'm failing if I do anything but one-shot everything I do, so no point in doing anything. Taking the time off gave me a great chance to analyze those feelings, to step back and look at how I persue projects, how I manage to strip all the fun out. Every step I go over with a fine toothed comb to ensure I don't have fun and don't take anything from the process either. 
 
 A huge part other process is just seeing this stuff for what it is. Realizing how you're really talking to your self, how you're approaching tasks. Even trying to have fun ended up in the same blender, it ended up coming out the same way: Alex, why aren't you better at this yet? That's a horrible way to live, but it's easy to let it fester. The more I tried, the more I failed, the more I failed the more ammo I had to tear my self apart the next time I had the temerity to try. 
+
+## What now?
+
+After I simply couldn't stand not working on my hobbies, I decided to get back in, with one major caveat: enjoy your self. Weather that means working in short sprints, zoning out with a podcast and working for hours, taking pics, spending two hours on a  mini with nothing to show for it, whatever. As long as I'm having fun, or at least enjoying my self. 
+
+There are quite a few other, smaller things I learned along the way. For one, work on what I want to work on. Sure, if there is something I want to get done, maybe I need to grit my teeth and work on that. But if there is something I *want* to work on, and there is nothing more pressing, then work on that! Also, none of this is pressing! It's all supposed to be fun! 
+
+Also: take one damn moment and 
