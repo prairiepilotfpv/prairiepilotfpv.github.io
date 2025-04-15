@@ -12,7 +12,7 @@ tags: blog,, update, news
 
 It's been a long time since I've gotten on here and posted anything. This blog was meant to be a clearing house for my thoughts and a tool to help with accountability. I had dreams of a picture perfect blog, with fun little photos and a nice ToC for every post. 
 
-It was a nice idea, and I don't think I was totally wrong, or I wouldn't be here writing this and planning on publishing it, would I? I do think I wasn't really in a good place to try and take on any new creative task.
+It was a nice idea, and I don't think I was totally wrong, or I wouldn't be here writing this and planning on publishing it, would I? The truth is, I had a good idea and I did try to follow through, but my mental health and the way I pursue my hobbies just weren't in the right place. Trying to keep up with my blog, especially my vision of a blog with pictures and wonderufl projects, was just more stress. 
 
 ## Bad Habits
 
