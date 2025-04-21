@@ -1,63 +1,61 @@
 ---
-
 layout: post
 title: Back Again
 cover-img:
 category: blog
-tags: blog,, update, news
-
+tags: blog, update, news
 ---
 
 # Boy Howdy
 
-It's been a long time since I've gotten on here and posted anything. This blog was meant to be a clearing house for my thoughts and a tool to help with accountability. I had dreams of a picture perfect blog, with fun little photos and a nice ToC for every post. 
+It's been a long time since I've posted here. This blog was meant to be a clearinghouse for my thoughts and a tool for accountability. I had dreams of a picture-perfect blog, with fun little photos and a nice ToC for every post.
 
-It was a nice idea, and I don't think I was totally wrong, or I wouldn't be here writing this and planning on publishing it, would I? The truth is, I had a good idea and I did try to follow through, but my mental health and the way I pursue my hobbies just weren't in the right place. Trying to keep up with my blog, especially my vision of a blog with pictures and wonderufl projects, was just more stress. 
+It was a nice idea, and I don't think I was totally wrong—or I wouldn't be here writing this, would I? The truth is, I had a good idea and did try to follow through, but my mental health and the way I pursue hobbies just weren't in the right place. Trying to maintain that idealized blog became more stress than it was worth.
 
 ## Bad Habits
 
-For a long time since getting on meds and trying to be a more functional person, I've struggled with enjoying my self when I'm doing things... I enjoy. There has been a log jam in my head, and it's still mostly there, where I can't just relax and have fun even if it's something I want to do. For most of '23 and '24 I clenched my teeth through everything I tried to do till I burned my self out. I stopped working on almost anything, I played lots of video games and limped my way through the holidays.
+Since getting on meds and trying to be more functional, I've struggled to enjoy myself even when doing things I *do* enjoy. There’s been a log jam in my head where I can't just relax and have fun. Through most of '23 and '24, I clenched my teeth through everything until I burned out. I stopped working on almost everything, played lots of video games, and limped through the holidays.
 
-I told my self I'd get back to work on my projects as soon as, well, as soon as something happened. There was always something. Eventually, I ran out of excuses and really think about why I didn't want to do my favorite things. 
+I told myself I'd get back to work on my projects as soon as—well, something happened. There was always something. Eventually, I ran out of excuses and had to think about why I didn’t want to do the things I supposedly loved.
 
-There was such a fear built up, an edge to any attempt at fun or creativity or anything that's not "productive", that I totally gave up without admitting I'd given up. I always found another excuse to avoid painting, or modeling, or doing anything I actually like doing. Even the little bit of hobby time I spent, taking photos or working on videos, never went anywhere. I couldn't look at the preview screen without finding something to shit on my self for. 
+There was fear—an edge to anything fun or creative—that made me give up before I even admitted it. I’d find another excuse to avoid painting, modeling, or anything else I used to enjoy. Even when I did spend hobby time, I couldn’t look at the preview screen without tearing myself apart.
 
-Before long, I had settled into a nice ryhthem. I worked all day, miserable that I couldn't be at home working on my projects, then as soon as I got home, I'd get good and high and find some excuses why I can't do anything. Eventually it's too late to work on anything, so I can have my tea and imagine a world where I actually work on stuff. 
+Before long, I settled into a rhythm: work all day, miserable I wasn’t doing my projects. Then get home, get high, find excuses not to do anything, and finally wind down with tea and a fantasy of being productive.
 
-## Do it my way
+## Do It My Way
 
-It came down to my mental state, not my meds, my diet, or anything else. I need more sleep, always, and I had to give up caffiene, but that just helped me see more clearly: I really *was* my own worst enemy. When I was 20 it was funny, and it made you seem more mature to admit it. Now, at 40, I'm sick of it. I can't finish a 32mm model for a game of Frostgrave because I can't paint the details without torturing my self.
+Ultimately, it came down to mindset. Not my meds, diet, or even sleep—though I always need more sleep, and cutting caffeine helped me think more clearly. The problem was me. I *was* my own worst enemy. At 20, that was a funny thing to admit. At 40, I’m just tired of it.
 
-And heres the worst part: when your internal monologue is all critisim and self abuse, you really *don't* get any better. Instead of focusing on the project in a holistic, enjoyable way, I had a checklist of things I was doing wrong till I found a reason to just give up. It was self defeat of the highest order. It was over the top, I'd drive for an hour looking for a good spot for some photos, and the entire time go over all the reasons I'm too stupid and too old to take good photos. By the time I got my tripod out of the car, there wasn't a chance I'd enjoy it. I'd take one photo, frown, and go home. 
+When your internal monologue is all criticism and self-abuse, you don’t improve. Instead of enjoying the process, I built a checklist of mistakes until I gave up. I’d drive an hour to take photos, spend the whole ride berating myself, then take one picture, frown, and go home.
 
-## Some light
+## Some Light
 
-So I gave up. But I gave up on my terms, for once. I didn't fall into another dark day, I didn't mope around till my dopamine caught up and I got all hyper. I just stepped away from all the hobbies I was torturing my self with. Mini painting, videos, 3D printing, etc etc, I put it all to the side. If the mood caught me, I didn't fight the urge, but otherwise I let it gather dust. I kept my camera on me, out of guilt for spending money I didn't have, but I stopped forcing my self to take as many photos as I can every day. 
+So I gave up—on my own terms. I didn’t spiral into another dark day or wait for a dopamine high to push me into action. I just stepped back. Mini painting, videos, 3D printing—all of it went on the shelf. If I felt like doing something, I did. Otherwise, it gathered dust. I kept my camera on me, mostly out of guilt, but stopped forcing myself to use it daily.
 
-I've always looked down my nose at people who take breaks from their hobbies. Who needs to take a break, just let your thoughts grind you into paste until you don't want to do anything any way. A few days later, you suddenly feel way better, and start a whole new project you can get frustrated with till the cycle starts over again! I looked down at my self for taking a break. I thought it was weak, how do I get better at anything by taking a break from it? I knew I'd give up again soon enough.
+I used to look down on people who took breaks from hobbies. How do you improve by not doing the thing? But it *was* a break I needed. It was a relief to not panic every time I got home, thinking I had to immediately start something productive. I resisted that urge to punish myself for not doing enough, or not doing it right. And you know what? I felt better.
 
-But I was right. It was great not to feel a panic everytime I get home that if I don't start something, anything, as soon as I get home I'm wasting my life. It was hard pushing against my usual urge to be mindlessly productive, but I also have an urge to punish my self for not doing enough. Or not doing it right, or not doing the right thing. Fuck it, just skip to the part where I feel better.
+## Back in the Saddle
 
-## Back in saddle
+This isn’t some grand turning point. Just another step I missed in early adulthood.
 
-This isn't a come to Jesus story. This wasn't the moment that changed it all. It was another learning moment as I go through the steps I didn't go through all those years ago as an early adult.
+I built a mindset that punished anything less than perfection. If I couldn’t one-shot a project, it wasn’t worth doing. Time off helped me realize how that thinking robbed the joy and learning from the process.
 
-I built a mindset that punished me for anything less than perfection. If I couldn’t one-shot a project, I saw it as a failure—not worth doing. Taking time off helped me step back and realize how that mindset stripped away all the joy and learning from the process.
+A huge part of growth is recognizing how you talk to yourself. Even fun things got put through the wringer. Alex, why aren’t you better at this yet? That thinking builds up. The more I tried and failed, the more ammo I had to tear myself apart next time I dared to try.
 
-A huge part other process is just seeing this stuff for what it is. Realizing how you're really talking to your self, how you're approaching tasks. Even trying to have fun ended up in the same blender, it ended up coming out the same way: Alex, why aren't you better at this yet? That's a horrible way to live, but it's easy to let it fester. The more I tried, the more I failed, the more I failed the more ammo I had to tear my self apart the next time I had the temerity to try.
+## What Now?
 
-## What now?
+Eventually, I couldn’t stand avoiding my hobbies. So I returned—with one rule: enjoy myself. Whether that’s short sprints, zoning out with a podcast, spending two hours on a mini with nothing to show for it—fine. As long as I’m enjoying the process.
 
-After I simply couldn't stand not working on my hobbies, I decided to get back in, with one major caveat: enjoy your self. Weather that means working in short sprints, zoning out with a podcast and working for hours, taking pics, spending two hours on a  mini with nothing to show for it, whatever. As long as I'm having fun, or at least enjoying my self.
+Part of that is choosing what I work on. I got so caught up in what I *should* do, I forgot to think about what I *want* to do. Sometimes I’d even change my method to match what’s "right." No more of that. Unless I’m just procrastinating, I’ll follow my interest.
 
-Part of enjoying my self is allowing myself to choose what I work on. I was so caught up with what I **should** do, I wasn't spending a moment on what I want to do. Sometimes I'd even change how I'm doing it to do it the right way. So, no more, unless I'm just avoiding something else, if I want to work on a different project today, I'm gonna work on it. 
+Another lesson I’m still learning: take pride in what I’ve done. I was raised by people proud of how hard they were on themselves. My mom was a baker who taught me to always see the flaws others miss. That works if you’re a master refining your craft. It’s not so helpful when you’re just trying to improve at painting minis.
 
-Another point I'm still learning, is to take a bit of pride in what I've done. I was raised by parents proud of how hard they were on them selves. My mother was a baker and taught me that you should always see the flaws everyone else misses. You should be your hardest critic, to an extreme degree. That's fine if you're a master at your craft, pushing your self to new heights. It's not so useful if you're just trying to get better at layering paints for a nice transition on a 1" mini. So now I actually *look* at my minis, when I'm done, I take a moment and appreicate when I design something that works. When I manage to nail a design on the first print I actually pump my fists and take a bit of joy in what I'm doing.
+So now, I *look* at my finished minis. I take a moment to appreciate when a design works. If I nail it on the first print, I actually celebrate it. I let myself feel proud.
 
+## Relax, Don't Do It
 
+At the core, I’ve just been my own worst enemy. I’m too old to cling to habits and thoughts that hold me back. Doesn’t matter where I learned it or why—it doesn’t help anyone. Especially as I see old age on the horizon, I don’t want to be the bitter old man who never learned to let go. It doesn’t feel good being mean to myself anymore.
 
-## Relax, don't do it
+I’m not a brand new man. It’s not a brand new day. But I *can* see light on the horizon. I can take decent photos. I *can* paint to a high standard. I’m not bad at designing things for print.
 
-What it all really comes down to, is being my own worst enemy. I'm too old to keep holding on to things that hurt me and hurt my progress towards being a somewhat happy person eventually. It doesn't matter who I learned it from, or why. It doesn't help me, it doesn't help anyone I care about. Especially as I get older, and see old age on the horizon, I simply don't want to be that stubborn old man that refuses to let go of their bad habits, their nasty thoughts. It just doesn't feel good being so mean to my self anymore. I'm almost 41, it doesn't work, talking down to my self doesn't make me better at anything.
-
-I'm not a brand new man, it's not a brand new day. I can see some light on the edge of the horizon, but there's plenty of road left in front of me. I *can* take decent photos, and paint mini's to a high standard. I'm not bad at designing objects for printing. The point is to enjoy life, failures and all. Even if I'm stuck at mediocre, I'll be fine, as long as I get the damn thing done. 
+The point is to enjoy life, failures and all. Even if I stay mediocre, I’ll be okay. As long as I get the damn thing done.
