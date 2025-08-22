@@ -50,7 +50,7 @@ let BeautifulJekyllJS = {
     // If the page was large images to randomly select from, choose an image
     if ($("#header-big-imgs").length > 0) {
       BeautifulJekyllJS.bigImgEl = $("#header-big-imgs");
-      BeautifulJekyllJS.numImgs = BeautifulJekyllJS.bigImgEl.attr("data-num-img");
+      BeautifulJekyllJS.numImgs = parseInt(BeautifulJekyllJS.bigImgEl.attr("data-num-img"), 10);
 
       // 2fc73a3a967e97599c9763d05e564189
       // set an initial image
