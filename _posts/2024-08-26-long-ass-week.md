@@ -2,8 +2,7 @@
 layout: post
 title: Time Fly's
 cover-img:
-category:
-tags: [blog, update,life,irl]
+tags: [blog, update, life, irl]
 date: 2024-08-26 23:37 -0400
 ---
 # It really does! 
