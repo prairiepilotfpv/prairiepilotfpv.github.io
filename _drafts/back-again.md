@@ -18,15 +18,15 @@ Since getting on meds and trying to be more functional, I've struggled to enjoy 
 
 I told myself I'd get back to work on my projects as soon as—well, something happened. There was always something. Eventually, I ran out of excuses and had to think about why I didn’t want to do the things I supposedly loved.
 
-There was fear—an edge to anything fun or creative—that made me give up before I even admitted it. I’d find another excuse to avoid painting, modeling, or anything else I used to enjoy. Even when I did spend hobby time, I couldn’t look at the preview screen without tearing myself apart.
+There was something I wasn't able to put a finger on that was hanging me up. Something that made me stop before I started. It was a feeling, a mood. I wasn't sitting around, waiting for motivation, I was actively trying to cultivate discipline and working on beloved projects filled me with dread. 
 
-Before long, I settled into a rhythm: work all day, miserable I wasn’t doing my projects. Then get home, get high, find excuses not to do anything, and finally wind down with tea and a fantasy of being productive.
+Before long, I settled into a rhythm: work all day, miserable I wasn’t doing my projects, get home and find a good reason to not work on a project. Too tired from the day, can't focus, just not in the mood. I'd get that feeling, that something I couldn't identify, and wile away my afternoon dreaming of being productive. 
 
 ## Do It My Way
 
-Ultimately, it came down to mindset. Not my meds, diet, or even sleep—though I always need more sleep, and cutting caffeine helped me think more clearly. The problem was me. I *was* my own worst enemy. At 20, that was a funny thing to admit. At 40, I’m just tired of it.
+Ultimately, it came down to mindset. Not my meds, diet, or even sleep—though I always need more sleep, and cutting caffeine helped me think more clearly. The problem was me. I *was* my own worst enemy. At 20, that was a funny thing to admit. At 40, I’m just tired of it, it's not cute being a middle aged man that can't even paint some Warhammer mini's without raking my self over the coals. 
 
-When your internal monologue is all criticism and self-abuse, you don’t improve. Instead of enjoying the process, I built a checklist of mistakes until I gave up. I’d drive an hour to take photos, spend the whole ride berating myself, then take one picture, frown, and go home.
+When your internal monologue is all criticism and self-abuse, you don’t improve. Instead of enjoying the process, I built a checklist of mistakes until I gave up. I’d drive an hour to take photos, spend the whole ride berating myself, then take one picture, frown, and go home. I could go on with the few other things I try to do, not even really full hobbies, little things that should be fun. 
 
 ## Some Light
 
