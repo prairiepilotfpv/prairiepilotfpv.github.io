@@ -7,7 +7,6 @@
 
 # My changes or fixes
 remote_theme: daattali/beautiful-jekyll@6.0.1
-exclude: [vendor]
 url: "https://icantstoptalking.com"
 
 ############################

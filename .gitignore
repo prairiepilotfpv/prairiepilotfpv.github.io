@@ -1,29 +1,22 @@
-# project
+# Project
 _site
 .sass-cache
 .vagrant
+rafts/
 
-# general
+# General
 .DS_Store
 Thumbs.db
 ehthumbs.db
 
-Gemfile.lock
-
 beautiful-jekyll-theme-*.gem
-
 CHANGELOG.md
-.gitignore~
-*.un~
+
+# Backups and swap files
+*~
+*.swp
+
+# Drafts to ignore
 _drafts/i-won-t-july-to-you.md
-*.swp
-*.swp
-*.md~
-*.un~
-*.swp
-*.md~
-*.un~
-_layouts/post.html~
-assets/css/.custom-styles.css.un~
-assets/css/custom-styles.css~
+
 webpage.zip

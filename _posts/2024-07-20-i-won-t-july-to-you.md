@@ -3,8 +3,8 @@ layout: post
 title: I won't July to you...
 cover-img: "/assets/img/julier/julier-header.jpg"
 thumbnail-img: "/assets/img/julier/julier-thumb-1-2.jpg"
-category: Blog, Update
-tags: blog, minis, painting, update
+categories: [Blog, Update]
+tags: [blog, minis, painting, update]
 date: 2024-07-20 23:10 -0400
 ---
 # Life Always Happens
