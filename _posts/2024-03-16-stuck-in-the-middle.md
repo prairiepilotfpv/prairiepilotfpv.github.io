@@ -19,7 +19,7 @@ I'll admit I was disappointed I didn't win that model contest, even though I did
 
 I meant, at one point, to take pictures along the way, but I've really been putting in time on this bust every chance I get, so when I've got 20 minutes to kill I'm not using it to take pictures. I'm getting into about the middle of the process, it's all layering once I get the hair colored in, but here's a quick snapshot I took with my phone after base layering. 
 
-![Bust](/assets/img/Daily 03132024/Daily-Bust.jpg#border)
+{% include img.html src="/assets/img/Daily 03132024/Daily-Bust.jpg" alt="Bust" border=true %}
 
 ## Spring Flings
 
@@ -31,7 +31,7 @@ I'm a little disappointed with the scale, I'm still not great a nailing how big 
 
 Another snapshot, apparently I had actually thought about the blog for a moment that day, but the model came out probably about 90%, there were some annoying flaws on the back of the model but it'll do for a spontaneous gift. 
 
-![Fish](/assets/img/Daily 03132024/Daily-Gyra.jpg#border)
+{% include img.html src="/assets/img/Daily 03132024/Daily-Gyra.jpg" alt="Fish" border=true %}
 
 Really excited to get working on this, I'll make sure to get a series of pictures so I can show off this one!
 
@@ -42,7 +42,7 @@ I like staying busy with my hobbies, I get really twitchy when I don't have some
 
 So...here's the rest of the war band I'm making for my wife and my self. It's a gaggle of various fantasy figures that should fill out my collection so my wife and I can finally play a few games. Time to learn the rules and get ready for a fun campaign in the frozen city!
 
-![Full Plate](/assets/img/Daily 03132024/Warband-FullPlate.jpg#border)
+{% include img.html src="/assets/img/Daily 03132024/Warband-FullPlate.jpg" alt="Full Plate" border=true %}
 
 
 This is not exactly a maxed out full plate, but it's as full as I prefer. This way I can rinse the plate off then put the entire plate into my wash station. I can warm up the models for easier support cleaner later, processing a full plate like this is a pain in the ass and I'll take any help I can get making it easier. This is what the setup looks like after going back and forth between [Titancraft](https://titancraft.com/home), [LycheeSlicer](https://mango3d.io) and [UVtools](https://github.com/sn4k3/UVtools). I'm not obsessed with perfect prints, but I hate having to clean my vat or re-print models so I took my time this week and made sure I supported this plate as completely and cleanly as possible.
