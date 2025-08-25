@@ -12,4 +12,5 @@ category: FPV
 # tags: [FPV]
 ```
 
-Items marked `featured: true` appear in the homepage's featured section. `category` or `tags` are used to populate topic sections.
+Items marked `featured: true` appear in the homepage's featured section.
+`category` or `tags` are used to populate topic sections.
