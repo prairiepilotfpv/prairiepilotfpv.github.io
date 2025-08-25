@@ -81,3 +81,15 @@
 .from-blog p:last-child {
   text-align: center;
 }
+
+/* Center post lists under their headings */
+.activity,
+.from-blog {
+  text-align: center;
+}
+
+.activity .activity-list,
+.from-blog .activity-list {
+  display: inline-block;
+  text-align: left;
+}
