@@ -4,6 +4,9 @@ _site
 .vagrant
 rafts/
 
+# Generated images
+assets/generated/
+
 # General
 .DS_Store
 Thumbs.db
