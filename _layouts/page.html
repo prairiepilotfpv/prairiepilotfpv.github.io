@@ -2,7 +2,9 @@
 layout: base
 ---
 
+{% unless page.hide_title %}
 {% include header.html type="page" %}
+{% endunless %}
 
 <main class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}">
   <div class="row">
