@@ -1,5 +1,90 @@
 ---
-layout: home
-title: Posts 
-subtitle: Here is my stuff 
+layout: page
+title: Home
 ---
+<!--
+Front matter conventions:
+  cover: /assets/covers/<file>.jpg
+  featured: true
+  category: <Topic>
+  tags: [<Topic>]
+-->
+<section class="hero">
+  <h1>{{ site.title }}</h1>
+  <p>Exploring FPV, 3D printing, AI and photography</p>
+  <p>
+    <a class="btn btn-primary" href="{{ '/blog/' | relative_url }}">Blog</a>
+    <a class="btn btn-primary" href="{{ '/projects/' | relative_url }}">Projects</a>
+  </p>
+</section>
+{% assign featured_posts = site.posts | where: 'featured', true %}
+{% assign featured_projects = site.projects | where: 'featured', true %}
+{% assign featured_features = site.features | where: 'featured', true %}
+{% assign featured_all = featured_posts | concat: featured_projects | concat: featured_features | sort: 'date' | reverse %}
+{% if featured_all.size > 0 %}
+<section class="featured">
+  <h2>Featured</h2>
+  <div class="featured-grid">
+  {% for item in featured_all %}
+    <div class="featured-card">
+      <a href="{{ item.url | relative_url }}">
+        {% if item.cover %}<img src="{{ item.cover | relative_url }}" alt="{{ item.title }}" loading="lazy">{% endif %}
+        <h3>{{ item.title }}</h3>
+      </a>
+    </div>
+  {% endfor %}
+  </div>
+</section>
+{% endif %}
+{% assign activity = site.posts | concat: site.projects | sort: 'date' | reverse %}
+{% if activity.size > 0 %}
+<section class="activity">
+  <h2>Latest Activity</h2>
+  <ul class="activity-list">
+  {% for item in activity limit:5 %}
+    <li><span class="post-meta">{{ item.date | date: site.date_format }}</span> &raquo; <a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+  {% endfor %}
+  </ul>
+</section>
+{% endif %}
+{% assign topics = 'FPV,3D Printing,AI,Photography' | split: ',' %}
+{% for topic in topics %}
+  {% assign topic_posts = site.posts | where_exp: 'p', 'p.tags contains topic or p.category == topic' %}
+  {% assign topic_projects = site.projects | where_exp: 'p', 'p.tags contains topic or p.category == topic' %}
+  {% assign topic_items = topic_posts | concat: topic_projects | sort: 'date' | reverse %}
+  {% if topic_items.size > 0 %}
+  <section class="topic-section">
+    <h2>{{ topic }}</h2>
+    <div class="topic-cards">
+    {% for item in topic_items limit:4 %}
+      <div class="topic-card">
+        <a href="{{ item.url | relative_url }}">
+          {% if item.cover %}<img src="{{ item.cover | relative_url }}" alt="{{ item.title }}" loading="lazy">{% endif %}
+          <h3>{{ item.title }}</h3>
+        </a>
+      </div>
+    {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+{% endfor %}
+{% assign gallery = site.static_files | where_exp: 'file', 'file.path contains "/assets/gallery/"' %}
+{% if gallery.size > 0 %}
+<section class="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery-strip">
+    {% for img in gallery %}
+      <img src="{{ img.path | relative_url }}" alt="" loading="lazy">
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+<section class="from-blog">
+  <h2>From the Blog</h2>
+  <ul class="activity-list">
+    {% for post in site.posts limit:5 %}
+      <li><span class="post-meta">{{ post.date | date: site.date_format }}</span> &raquo; <a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+  <p><a href="{{ '/blog/' | relative_url }}">View all posts &rarr;</a></p>
+</section>
