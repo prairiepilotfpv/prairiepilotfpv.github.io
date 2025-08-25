@@ -27,7 +27,7 @@ On a more positive note, I am very happy with what I have accomplished. Another 
 
 I have learned to play at least. I have enough terrain and minis that I can put them out on my downstairs table and start learning what I'm doing. It's a fun system, I can't wait to get a real game going now that I'm so well equipped. I have a lot more terrain to paint and I need a battle mat, but besides that I'm just champing at the bit to get playing. 
 
-![AI Magic!](/assets/img/julier/julier-frostgrave-one.jpg#border)
+{% include img.html src="/assets/img/julier/julier-frostgrave-one.jpg" alt="AI Magic!" border=true %}
 
 ## The side pieces:
 

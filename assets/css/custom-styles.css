@@ -1,7 +1,7 @@
 /* assets/css/custom-styles.css */
 
 /* Custom styles for images with border */
-img[src*="#border"] {
+.img-border {
   border: 5px solid #3B2F01;
   border-radius: 10px;
 }
