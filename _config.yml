@@ -153,6 +153,7 @@ footer-hover-col: "#0085A1"
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
 site-css:
   - "/assets/css/custom-styles.css"
+  - "/assets/css/home.css"
 
 # If you have common JavaScript files that should be included in every page, list them here
 #site-js:
@@ -257,6 +258,14 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+  features:
+    output: true
+    permalink: /features/:name/
 
 kramdown:
   input: GFM
