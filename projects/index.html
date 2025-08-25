@@ -1,0 +1,15 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+---
+<div class="projects-grid">
+  {% for project in site.projects %}
+    <div class="project-card">
+      <a href="{{ project.url | relative_url }}">
+        {% if project.cover %}<img src="{{ project.cover | relative_url }}" alt="{{ project.title }}" loading="lazy" class="project-cover">{% endif %}
+        <h3>{{ project.title }}</h3>
+      </a>
+    </div>
+  {% endfor %}
+</div>

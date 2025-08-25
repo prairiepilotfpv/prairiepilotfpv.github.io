@@ -1,0 +1,44 @@
+/* Magazine-style homepage styles */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+.hero .btn {
+  margin: 0 0.5rem;
+}
+.featured-grid, .topic-cards, .projects-grid {
+  display: grid;
+  gap: 1rem;
+}
+.featured-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+.activity-list {
+  list-style: none;
+  padding: 0;
+}
+.activity-list li {
+  margin-bottom: 0.5rem;
+}
+.topic-section {
+  margin: 2rem 0;
+}
+.topic-cards {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.topic-card img, .featured-card img, .project-card img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  display: block;
+}
+.gallery-strip {
+  display: flex;
+  overflow-x: auto;
+  gap: 0.5rem;
+}
+.gallery-strip img {
+  height: 120px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}

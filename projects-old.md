@@ -1,7 +1,8 @@
 ---
-title: Projects
+title: Projects (legacy)
 layout: page
 subtitle:
+permalink: /projects-old/
 ---
 
 
