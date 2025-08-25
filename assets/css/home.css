@@ -42,3 +42,42 @@
   aspect-ratio: 16/9;
   object-fit: cover;
 }
+
+/* Centered home layout and consistent headings */
+.home-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem 1rem 2.5rem;
+}
+
+.featured,
+.activity,
+.topic-section,
+.gallery,
+.from-blog {
+  margin: 2.5rem 0;
+}
+
+/* Section headings */
+.featured > h2,
+.activity > h2,
+.topic-section > h2,
+.gallery > h2,
+.from-blog > h2 {
+  text-align: center;
+  margin: 0 0 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: clamp(1.6rem, 2.2vw, 2rem);
+}
+
+/* Hero heading sizing */
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin: 0 0 0.5rem;
+}
+
+/* Center the "view all" link */
+.from-blog p:last-child {
+  text-align: center;
+}
