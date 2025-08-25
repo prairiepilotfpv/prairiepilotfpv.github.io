@@ -3,8 +3,8 @@ layout: post
 title: In the thick of it
 cover-img: "/assets/img/Daily 03132024/031620204-Cover.jpg"
 thumbnail-img: "/assets/img/Daily 03132024/031620204-Thumb.jpg"
-category: Frostgrave
-tags: painting, minis, Frostgrave
+categories: [Frostgrave]
+tags: [painting, minis, Frostgrave]
 date: 2024-03-16 13:22 -0400
 ---
 # Boy Howdy
