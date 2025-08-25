@@ -9,5 +9,7 @@
 {%- assign src = include.src -%}
 {%- if src | slice: 0, 12 == '/assets/img/' -%}
   {%- assign src = src | remove_first: '/assets/img/' -%}
+  {% picture {{ preset }} {{ src | jsonify }} --alt {{ alt | jsonify }}{{ extra }} %}
+{%- else -%}
+  <img src="{{ src | relative_url }}" alt="{{ alt }}"{% unless classes == '' %} class="{{ classes }}"{% endunless %}>
 {%- endif -%}
-{% picture {{ preset }} {{ src | jsonify }} --alt {{ alt | jsonify }}{{ extra }} %}
