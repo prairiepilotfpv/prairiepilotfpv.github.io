@@ -11,7 +11,6 @@ gem "csv"
 gem "base64"
 gem "jekyll-paginate"
 gem "jekyll-sitemap"
-gem 'jekyll_picture_tag'
 gem 'kramdown-parser-gfm'
 gem 'webrick'
 
