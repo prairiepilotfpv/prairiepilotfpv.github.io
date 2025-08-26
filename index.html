@@ -13,11 +13,7 @@ Front matter conventions:
 <div class="home-container">
 <section class="hero" style="margin-top: 2.5rem">
   <h1>{{ site.title }}</h1>
-  <p>Exploring FPV, 3D printing, AI and photography</p>
-  <p>
-    <a class="btn btn-primary" href="{{ '/blog/' | relative_url }}">Blog</a>
-    <a class="btn btn-primary" href="{{ '/projects/' | relative_url }}">Projects</a>
-  </p>
+  <p>A person website exploring my many hobbies, and the interesting places where they ineract. Since I was a child I've always had a wide range of interests, so much so no one was very suprised at my ADHD diagnosis as an adult. After years of medication and some therapy, I have better control over my focus and my hobbies, and want to finish projects and share them in my own way.  </p>
 </section>
 {% assign featured_posts = site.posts | where: 'featured', true %}
 {% assign featured_projects = site.projects | where: 'featured', true %}
@@ -36,17 +32,6 @@ Front matter conventions:
     </div>
   {% endfor %}
   </div>
-</section>
-{% endif %}
-{% assign activity = site.posts | concat: site.projects | sort: 'date' | reverse %}
-{% if activity.size > 0 %}
-<section class="activity">
-  <h2>Latest Activity</h2>
-  <ul class="activity-list">
-  {% for item in activity limit:5 %}
-    <li><span class="post-meta">{{ item.date | date: site.date_format }}</span> &raquo; <a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
-  {% endfor %}
-  </ul>
 </section>
 {% endif %}
 {% assign topics = 'FPV,3D Printing,AI,Photography' | split: ',' %}
@@ -81,13 +66,4 @@ Front matter conventions:
   </div>
 </section>
 {% endif %}
-<section class="from-blog">
-  <h2>From the Blog</h2>
-  <ul class="activity-list">
-    {% for post in site.posts limit:5 %}
-      <li><span class="post-meta">{{ post.date | date: site.date_format }}</span> &raquo; <a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-  <p><a href="{{ '/blog/' | relative_url }}">View all posts &rarr;</a></p>
-</section>
 </div>
