@@ -320,12 +320,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-remote-theme
-  - jekyll_picture_tag
-
-picture:
-  source: assets/img
-  output: assets/generated
-
+  
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
 
