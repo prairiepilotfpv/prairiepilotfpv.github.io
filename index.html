@@ -15,6 +15,13 @@ Front matter conventions:
   <h1>{{ site.title }}</h1>
   <p>A person website exploring my many hobbies, and the interesting places where they ineract. Since I was a child I've always had a wide range of interests, so much so no one was very suprised at my ADHD diagnosis as an adult. After years of medication and some therapy, I have better control over my focus and my hobbies, and want to finish projects and share them in my own way.  </p>
 </section>
+{% assign latest_post = site.posts | first %}
+{% if latest_post %}
+<section class="quick-test" style="margin: 0 0 1.5rem; padding: .75rem 1rem; background: #fff3cd; border: 1px solid #ffeeba; border-radius: .25rem;">
+  <strong>Quick test:</strong>
+  <a href="{{ latest_post.url | relative_url }}">Open latest blog post — {{ latest_post.title }}</a>
+</section>
+{% endif %}
 {% assign featured_posts = site.posts | where: 'featured', true %}
 {% assign featured_projects = site.projects | where: 'featured', true %}
 {% assign featured_features = site.features | where: 'featured', true %}
@@ -24,9 +31,23 @@ Front matter conventions:
   <h2>Featured</h2>
   <div class="featured-grid">
   {% for item in featured_all %}
+    {% capture cover %}
+      {% if item.cover %}
+        {{ item.cover }}
+      {% elsif item.cover-img %}
+        {% if item.cover-img.first %}
+          {{ item.cover-img[0].first.first }}
+        {% else %}
+          {{ item.cover-img }}
+        {% endif %}
+      {% elsif item.thumbnail-img %}
+        {{ item.thumbnail-img }}
+      {% endif %}
+    {% endcapture %}
+    {% assign cover = cover | strip %}
     <div class="featured-card">
       <a href="{{ item.url | relative_url }}">
-        {% if item.cover %}<img src="{{ item.cover | relative_url }}" alt="{{ item.title }}" loading="lazy">{% endif %}
+        {% if cover != '' %}<img src="{{ cover | relative_url }}" alt="{{ item.title }}" loading="lazy">{% endif %}
         <h3>{{ item.title }}</h3>
       </a>
     </div>
@@ -48,9 +69,23 @@ Front matter conventions:
     <h2>{{ topic }}</h2>
     <div class="topic-cards">
     {% for item in topic_items limit:4 %}
+      {% capture cover %}
+        {% if item.cover %}
+          {{ item.cover }}
+        {% elsif item.cover-img %}
+          {% if item.cover-img.first %}
+            {{ item.cover-img[0].first.first }}
+          {% else %}
+            {{ item.cover-img }}
+          {% endif %}
+        {% elsif item.thumbnail-img %}
+          {{ item.thumbnail-img }}
+        {% endif %}
+      {% endcapture %}
+      {% assign cover = cover | strip %}
       <div class="topic-card">
         <a href="{{ item.url | relative_url }}">
-          {% if item.cover %}<img src="{{ item.cover | relative_url }}" alt="{{ item.title }}" loading="lazy">{% endif %}
+          {% if cover != '' %}<img src="{{ cover | relative_url }}" alt="{{ item.title }}" loading="lazy">{% endif %}
           <h3>{{ item.title }}</h3>
         </a>
       </div>

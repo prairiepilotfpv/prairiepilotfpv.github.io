@@ -1,5 +1,5 @@
 {%- assign alt = include.alt | default: '' -%}
 {%- capture img_class -%}{% if include.border %}img-border{% endif %}{% if include.class %}{% if include.border %} {% endif %}{{ include.class }}{% endif %}{%- endcapture -%}
 {%- assign classes = img_class | strip -%}
-{%- assign src = include.src | remove_first: '/' -%}
-<img src="/{{ src }}" alt="{{ alt }}"{% unless classes == '' %} class="{{ classes }}"{% endunless %} />
+{%- assign src = include.src | default: '' -%}
+<img src="{{ src | relative_url }}" alt="{{ alt }}"{% unless classes == '' %} class="{{ classes }}"{% endunless %} />

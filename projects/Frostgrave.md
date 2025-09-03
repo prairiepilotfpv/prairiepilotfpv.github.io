@@ -47,13 +47,13 @@ After a year of, if I'm honest, farting around, I finally found the focus and or
 
       {% if thumbnail != "" %}
       <div class="post-image">
-        <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
-          <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
+        <a href="{{ post.url | relative_url }}" aria-label="Thumbnail">
+          <img src="{{ thumbnail | relative_url }}" alt="Post thumbnail">
         </a>
       </div>
       {% endif %}
 
-      <a href="{{ post.url | absolute_url }}">
+      <a href="{{ post.url | relative_url }}">
         <h2 class="post-title">{{ post.title | strip_html }}</h2>
         {% if post.subtitle %}
           <h3 class="post-subtitle">{{ post.subtitle | strip_html }}</h3>
@@ -73,7 +73,7 @@ After a year of, if I'm honest, farting around, I finally found the focus and or
         {{ post.excerpt | strip_html | truncatewords: excerpt_length }}
         {% assign excerpt_word_count = post.excerpt | number_of_words %}
         {% if post.content != post.excerpt or excerpt_word_count > excerpt_length %}
-          <a href="{{ post.url | absolute_url }}" class="post-read-more">[Read&nbsp;More]</a>
+          <a href="{{ post.url | relative_url }}" class="post-read-more">[Read&nbsp;More]</a>
         {% endif %}
       </div>
 
@@ -83,7 +83,7 @@ After a year of, if I'm honest, farting around, I finally found the focus and or
         <ul class="d-inline list-inline" role="list">
           {% for tag in post.tags %}
           <li class="list-inline-item">
-            <a href="{{ '/tags' | absolute_url }}#{{- tag -}}">{{- tag -}}</a>
+            <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
           </li>
           {% endfor %}
         </ul>
@@ -115,4 +115,3 @@ After a year of, if I'm honest, farting around, I finally found the focus and or
   {% endif %}
 </ul>
 {% endif %}
-
