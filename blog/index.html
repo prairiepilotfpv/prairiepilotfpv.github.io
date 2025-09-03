@@ -1,13 +1,9 @@
 ---
-layout: page
+layout: home
 title: Blog
 permalink: /blog/
 ---
-<ul class="post-list">
-  {% for post in site.posts %}
-    <li>
-      <span class="post-meta">{{ post.date | date: site.date_format }}</span>
-      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-    </li>
-  {% endfor %}
-</ul>
+
+<p>Thoughts, notes, and updates.</p>
+
+<!-- The posts feed will render below via the `home` layout -->
