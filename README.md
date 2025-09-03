@@ -17,7 +17,7 @@ Items marked `featured: true` appear in the homepage's featured section.
 
 ## Development
 
-Install Ruby, Bundler, Node.js and [ImageMagick](https://imagemagick.org) (ensure WebP support is enabled).
+Install Ruby, Bundler, and Node.js 18+.
 
 Run the site locally with:
 
@@ -27,5 +27,24 @@ npm install
 bundle exec jekyll serve
 ```
 
-Responsive images are generated automatically during the Jekyll build process using the `jekyll-responsive-image` plugin.
 Push your changes to the `main` branch to trigger the GitHub Actions workflow, which builds the site and publishes it to GitHub Pages.
+
+## Responsive images via Jampack
+
+Jampack post-processes files in `_site/` to add `srcset`/`sizes`, generate AVIF/WebP versions, create low-quality placeholders, and enable lazy-loading.
+
+### Local usage
+
+Prerequisites: Ruby/Jekyll installed and Node 18+.
+
+Commands:
+
+```
+bundle install
+npm install
+npm run build:opt
+```
+
+Preview the optimized site by serving the `./_site/` folder locally (for example, using VS Code Live Server).
+
+GitHub Pages' default builder doesn't run Jampack; the CI workflow handles optimization on deploy.
