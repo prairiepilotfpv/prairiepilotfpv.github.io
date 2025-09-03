@@ -89,6 +89,7 @@ GEM
     tzinfo-data (1.2023.4)
       tzinfo (>= 1.0.0)
     unicode-display_width (2.6.0)
+    wdm (0.2.0)
     webrick (1.9.1)
 
 PLATFORMS
@@ -106,6 +107,7 @@ DEPENDENCIES
   kramdown-parser-gfm
   tzinfo (= 2.0.6)
   tzinfo-data (= 1.2023.4)
+  wdm (>= 0.1.0)
   webrick
 
 BUNDLED WITH
