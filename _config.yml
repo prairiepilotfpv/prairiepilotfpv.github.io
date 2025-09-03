@@ -296,13 +296,13 @@ jekyll_compose:
     drafts:
       title: 
       cover-img:
-      category:
+      categories:
       tags:
       layout: "post"
     posts:
       title: 
       cover-img:
-      category:
+      categories:
       tags:
       readtime: true
       layout: "post"
