@@ -1,36 +1,21 @@
 ---
-layout: page
-title: Projects
-subtitle: A showcase of ongoing projects and progress
+layout: project
+title: Warhammer 40K
+permalink: /projects/warhammer40k/
 ---
 
-<!-- Style for section headings and dividers -->
-<style>
-.section-heading {
-    font-size: 2.5em;
-    text-align: center;
-    margin: 40px 0 20px;
-    color: #333;
-    font-weight: bold;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 10px;
-}
-</style>
-
-<!-- Frostgrave Section -->
-<h1 class="section-heading"><a href="{{ site.baseurl }}/Frostgrave/">Frostgrave</a></h1>
+<h1 class="section-heading"><a href="{{ site.baseurl }}/projects/warhammer40k/">Warhammer 40K</a></h1>
 
 <p>
-I'm the most excited about this. It's been a long time coming, but I'm pumped to finally see the finish line. I've got minis, I've got more and more terrain by the day, I've even got a big stack of character sheets and spell cards. I'm also thinking of some fun ways to show off all the fun stuff I've been working on.
+Details about the Warhammer 40K project. Here you can add a brief description or introduction.
 </p>
 
-<!-- Post list for Frostgrave category -->
+<!-- Post list for Warhammer 40K category -->
 <ul class="posts-list list-unstyled" role="list">
-{% assign frostgrave_posts = site.posts | where: "category", "Frostgrave" %}
-{% for post in frostgrave_posts %}
+{% assign wh40k_posts = site.posts | where: "category", "Warhammer 40K" %}
+{% for post in wh40k_posts %}
   <li class="post-preview">
     <article>
-      <!-- Capture the thumbnail image -->
       {%- capture thumbnail -%}
         {% if post.thumbnail-img %}
           {{ post.thumbnail-img }}
@@ -45,24 +30,21 @@ I'm the most excited about this. It's been a long time coming, but I'm pumped to
       {% endcapture %}
       {% assign thumbnail = thumbnail | strip %}
 
-      <!-- Display the thumbnail image if available -->
       {% if thumbnail != "" %}
       <div class="post-image">
-        <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
-          <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
+        <a href="{{ post.url | relative_url }}" aria-label="Thumbnail">
+          <img src="{{ thumbnail | relative_url }}" alt="Post thumbnail">
         </a>
       </div>
       {% endif %}
 
-      <!-- Post title and subtitle -->
-      <a href="{{ post.url | absolute_url }}">
+      <a href="{{ post.url | relative_url }}">
         <h2 class="post-title">{{ post.title | strip_html }}</h2>
         {% if post.subtitle %}
           <h3 class="post-subtitle">{{ post.subtitle | strip_html }}</h3>
         {% endif %}
       </a>
 
-      <!-- Post metadata -->
       {% if post.author %}
         <span class="post-author">by <strong>{{ post.author | strip_html }}</strong></span>
       {% endif %}
@@ -71,25 +53,22 @@ I'm the most excited about this. It's been a long time coming, but I'm pumped to
         Posted on {{ post.date | date: date_format }}
       </p>
 
-      <!-- Post excerpt and read more link -->
       <div class="post-entry">
         {% assign excerpt_length = site.excerpt_length | default: 50 %}
         {{ post.excerpt | strip_html | truncatewords: excerpt_length }}
         {% assign excerpt_word_count = post.excerpt | number_of_words %}
         {% if post.content != post.excerpt or excerpt_word_count > excerpt_length %}
-          <a href="{{ post.url | absolute_url }}" class="post-read-more">[Read&nbsp;More]</a>
+          <a href="{{ post.url | relative_url }}" class="post-read-more">[Read&nbsp;More]</a>
         {% endif %}
       </div>
 
-      <!-- Post tags -->
       {% if site.feed_show_tags != false and post.tags.size > 0 %}
       <div class="blog-tags">
         <span>Tags:</span>
-        <!-- Inline list of tags -->
         <ul class="d-inline list-inline" role="list">
           {% for tag in post.tags %}
           <li class="list-inline-item">
-<a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
+            <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
           </li>
           {% endfor %}
         </ul>
@@ -100,17 +79,12 @@ I'm the most excited about this. It's been a long time coming, but I'm pumped to
 {% endfor %}
 </ul>
 
-<!-- OPR Section -->
-<h1 class="section-heading"><a href="{{ site.baseurl }}/OPR/">One Page Rules</a></h1>
-
-<!-- Similar content for OPR can go here -->
-
-<!-- Pagination for OPR section -->
+<!-- Pagination -->
 {% if paginator.total_pages > 1 %}
 <ul class="pagination main-pager">
   {% if paginator.previous_page %}
   <li class="page-item previous">
-    <a class="page-link" href="{{ paginator.previous_page_path | absolute_url }}">
+    <a class="page-link" href="{{ paginator.previous_page_path | relative_url }}">
       <i class="fas fa-arrow-left" alt="Newer Posts"></i>
       <span class="d-none d-sm-inline-block">Newer Posts</span>
     </a>
@@ -118,7 +92,7 @@ I'm the most excited about this. It's been a long time coming, but I'm pumped to
   {% endif %}
   {% if paginator.next_page %}
   <li class="page-item next">
-    <a class="page-link" href="{{ paginator.next_page_path | absolute_url }}">
+    <a class="page-link" href="{{ paginator.next_page_path | relative_url }}">
       <span class="d-none d-sm-inline-block">Older Posts</span>
       <i class="fas fa-arrow-right" alt="Older Posts"></i>
     </a>
