@@ -45,13 +45,13 @@ footer a:focus {
 
 /* Social Media Buttons */
 .footer-links .list-inline-item a {
-  color: transparent; /* Transparent icon color */
+  color: transparent; /* back to original */
   text-decoration: none;
 }
 
 .footer-links .list-inline-item a:hover,
 .footer-links .list-inline-item a:focus {
-  color: #FFD700; /* Gold color on hover/focus */
+  color: #FFD700; /* back to original hover/focus */
 }
 
 /* Specific Colors for Social Media Platforms */
@@ -97,6 +97,36 @@ footer a:focus {
 
 .footer-links .list-inline-item a.discord:hover,
 .footer-links .list-inline-item a.discord:focus {
+  color: #7289DA; /* Discord blurple */
+}
+
+/* Add specific styles for more social networks as needed */
+
+/* Custom style for H1 headings */
+h1 {
+  color: #3F2811; /* Dark brown color */
+}
+
+
+/* Custom style for H1 headings inside post header */
+.post-heading h1 {
+  color: #3F2811; /* Dark brown color */
+  text-shadow: 
+    -1px -1px 0 #fff,  
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff; /* White outline */
+
+
+/* Center all headers in blog posts */
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+  text-align: center;
+}
   color: #7289DA; /* Discord blurple */
 }
 

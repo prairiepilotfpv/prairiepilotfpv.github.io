@@ -26,7 +26,10 @@ author: Alex
 navbar-links:
   # Posts: '/index'
   Projects: 'projects'
+  Blog: 'blog'
   About Me: 'aboutme'
+  Portfolio: 'https://prairieexposures.com/'
+  Prints: 'https://prairieexposures.darkroom.com/'
 
 ################
 # --- Logo --- #
