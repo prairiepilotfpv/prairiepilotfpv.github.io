@@ -14,33 +14,33 @@
 
 /* Custom Navbar Styles */
 .navbar-custom {
-  background-color: #001f3f; /* Navy background color */
-  border-bottom: 1px solid #444444; /* Optional darker border color */
+  background-color: #EAEAEA; /* Light grey background */
+  border-bottom: 1px solid #DDDDDD; /* Light grey border */
 }
 
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-nav .nav-link {
-  color: #FFFFFF; /* White text color */
+  color: #404040; /* Dark text for contrast */
 }
 
 .navbar-custom .navbar-nav .nav-link:hover,
 .navbar-custom .navbar-nav .nav-link:focus {
-  color: #FFD700; /* Gold color on hover/focus */
+  color: #0085A1; /* Match theme hover color */
 }
 
 /* Custom Footer Styles */
 footer {
-  background-color: #001f3f; /* Navy background color */
-  color: #FFFFFF; /* White text color */
+  background-color: #EAEAEA; /* Light grey background */
+  color: #404040; /* Dark text for contrast */
 }
 
 footer a {
-  color: #FFFFFF; /* White links */
+  color: #404040; /* Dark links */
 }
 
 footer a:hover,
 footer a:focus {
-  color: #FFD700; /* Gold on hover/focus */
+  color: #0085A1; /* Match theme hover color */
 }
 
 /* Social Media Buttons */
