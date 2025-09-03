@@ -10,7 +10,7 @@ I've got a good bit of a Dwarven Guild list printed and painted, and I'm excited
 
 <!-- Post list for One Page Rules category -->
 <ul class="posts-list list-unstyled" role="list">
-{% assign opr_posts = site.posts | where: "category", "OPR" %}
+{% assign opr_posts = site.posts | where: "categories", "OPR" %}
 {% for post in opr_posts %}
   <li class="post-preview">
     <article>

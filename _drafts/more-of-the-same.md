@@ -2,6 +2,6 @@
 layout: post
 title:
 cover-img:
-category:
+categories:
 tags:
 ---
