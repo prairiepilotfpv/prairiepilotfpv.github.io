@@ -2,7 +2,7 @@
 layout: post
 title: Falling In
 cover-img:
-category: Blog
+categories: Blog
 tags:
 - blog
 - post

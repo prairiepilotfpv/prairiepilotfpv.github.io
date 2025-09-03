@@ -3,7 +3,7 @@
 layout: post
 title: Time Fly's
 cover-img:
-category:
+categories:
 tags: blog, update,life,irl
 
 ---

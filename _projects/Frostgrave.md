@@ -26,7 +26,7 @@ After a year of, if I'm honest, farting around, I finally found the focus and or
 
 <!-- Post list for Frostgrave category -->
 <ul class="posts-list list-unstyled" role="list">
-{% assign frostgrave_posts = site.posts | where: "category", "Frostgrave" %}
+{% assign frostgrave_posts = site.posts | where: "categories", "Frostgrave" %}
 {% for post in frostgrave_posts %}
   <li class="post-preview">
     <article>
