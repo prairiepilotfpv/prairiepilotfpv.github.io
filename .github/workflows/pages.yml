@@ -42,6 +42,7 @@ jobs:
         run: bundle exec jekyll build --trace
 
       - name: Optimize with Jampack
+        # Minify and generate responsive srcsets
         run: npx jampack _site
 
       - name: Upload artifact
