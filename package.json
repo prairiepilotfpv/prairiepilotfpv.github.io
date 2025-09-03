@@ -4,11 +4,16 @@
   "description": "Use these optional keys in posts, projects, or features to integrate with the magazine-style homepage:",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "bundle exec jekyll build"
+    "build": "bundle exec jekyll build",
+    "optimize": "jampack _site",
+    "build:opt": "npm run build && npm run optimize",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "devDependencies": {
+    "@divriots/jampack": "^0.33.1"
+  }
 }

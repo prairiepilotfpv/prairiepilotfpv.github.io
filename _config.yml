@@ -320,14 +320,6 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-remote-theme
-  - jekyll-responsive-image
-
-responsive_image:
-  template: _includes/responsive-image.html
-  sizes:
-    - width: 400
-    - width: 800
-    - width: 1600
   
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
