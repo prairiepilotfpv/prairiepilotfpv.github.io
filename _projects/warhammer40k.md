@@ -12,7 +12,7 @@ Details about the Warhammer 40K project. Here you can add a brief description or
 
 <!-- Post list for Warhammer 40K category -->
 <ul class="posts-list list-unstyled" role="list">
-{% assign wh40k_posts = site.posts | where: "category", "Warhammer 40K" %}
+{% assign wh40k_posts = site.posts | where: "categories", "Warhammer 40K" %}
 {% for post in wh40k_posts %}
   <li class="post-preview">
     <article>

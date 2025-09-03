@@ -4,7 +4,7 @@ layout: post
 title: March On By
 cover-img:  "/assets/img/march-on/bust_wip_header.jpg"
 thumbnail-img: "/assets/img/march-on/march-on-thumb.jpg"
-category: Blog, Update
+categories: [Blog, Update]
 tags: minis, blog, painting, gaming
 
 ---

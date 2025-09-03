@@ -2,7 +2,7 @@
 layout: post
 title: Back Again
 cover-img:
-category: blog
+categories: blog
 tags: blog, update, news
 ---
 

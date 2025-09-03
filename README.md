@@ -7,13 +7,13 @@ Use these optional keys in posts, projects, or features to integrate with the ma
 ```
 cover: /assets/covers/<file>.jpg
 featured: true
-category: FPV
+categories: FPV
 # or
 # tags: [FPV]
 ```
 
 Items marked `featured: true` appear in the homepage's featured section.
-`category` or `tags` are used to populate topic sections.
+`categories` or `tags` are used to populate topic sections.
 
 ## Development
 
