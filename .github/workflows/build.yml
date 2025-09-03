@@ -19,6 +19,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Install ImageMagick
+        run: sudo apt-get update && sudo apt-get install -y imagemagick libmagickwand-dev
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
@@ -26,7 +28,6 @@ jobs:
         with:
           node-version: '20'
       - run: npm ci
-      - run: npm run build:images
       - run: bundle exec jekyll build
       - uses: actions/upload-pages-artifact@v3
         with:
