@@ -2,8 +2,4 @@
 {%- capture img_class -%}{% if include.border %}img-border{% endif %}{% if include.class %}{% if include.border %} {% endif %}{{ include.class }}{% endif %}{%- endcapture -%}
 {%- assign classes = img_class | strip -%}
 {%- assign src = include.src | remove_first: '/' -%}
-{% responsive_image_block %}
-  path: {{ src }}
-  alt: {{ alt | jsonify }}
-  {% unless classes == '' %}class: {{ classes | jsonify }}{% endunless %}
-{% endresponsive_image_block %}
+<img src="/{{ src }}" alt="{{ alt }}"{% unless classes == '' %} class="{{ classes }}"{% endunless %} />

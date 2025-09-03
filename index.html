@@ -34,11 +34,15 @@ Front matter conventions:
   </div>
 </section>
 {% endif %}
-{% assign topics = 'FPV,3D Printing,AI,Photography' | split: ',' %}
-{% for topic in topics %}
-  {% assign topic_posts = site.posts | where_exp: 'p', 'p.tags contains topic or p.category == topic' %}
-  {% assign topic_projects = site.projects | where_exp: 'p', 'p.tags contains topic or p.category == topic' %}
-  {% assign topic_items = topic_posts | concat: topic_projects | sort: 'date' | reverse %}
+  {% assign topics = 'FPV,3D Printing,AI,Photography' | split: ',' %}
+  {% for topic in topics %}
+    {% assign topic_posts = site.posts | where: 'category', topic %}
+    {% assign tagged_posts = site.posts | where_exp: 'p', 'p.tags contains topic' %}
+    {% assign topic_posts = topic_posts | concat: tagged_posts | uniq %}
+    {% assign topic_projects = site.projects | where: 'category', topic %}
+    {% assign tagged_projects = site.projects | where_exp: 'p', 'p.tags contains topic' %}
+    {% assign topic_projects = topic_projects | concat: tagged_projects | uniq %}
+    {% assign topic_items = topic_posts | concat: topic_projects | sort: 'date' | reverse %}
   {% if topic_items.size > 0 %}
   <section class="topic-section">
     <h2>{{ topic }}</h2>
