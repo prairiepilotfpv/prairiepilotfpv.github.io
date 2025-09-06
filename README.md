@@ -22,7 +22,7 @@ Items marked `featured: true` appear in the homepage's featured section.
 
 ## Development
 
-Install Ruby, Bundler, and Node.js 18+.
+Install Ruby 3.3+, Bundler 2.7+, and Node.js 18+.
 
 Run the site locally with:
 
@@ -40,7 +40,7 @@ Jampack post-processes files in `_site/` to add `srcset`/`sizes`, generate AVIF/
 
 ### Local usage
 
-Prerequisites: Ruby/Jekyll installed and Node 18+.
+Prerequisites: Ruby 3.3+/Jekyll installed and Node 18+.
 
 Commands:
 
