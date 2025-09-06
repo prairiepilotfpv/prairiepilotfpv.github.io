@@ -2,7 +2,7 @@
 layout: project
 title: Keldor Of Darrik
 subtitle: Frostgrave warband lore
-permalink: /projects/frostgrave/Keldor
+permalink: /projects/frostgrave/Keldor/
 categories: [Frostgrave, Lore]
 tags: [Frostgrave, lore, writing, homebrew, fantasy]
 

@@ -2,7 +2,7 @@
 layout: project
 title: Starting Sorcerer
 subtitle: Keldor of Darrik
-permalink: /projects/frostgrave/starting-sorcerer
+permalink: /projects/frostgrave/starting-sorcerer/
 
 ---
 
