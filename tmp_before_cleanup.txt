@@ -216,16 +216,85 @@ h1 {
    ========================================================= */
 
 /* Magazine-style homepage styles */
-.projects-grid {
+.featured-grid, .topic-cards, .projects-grid {
   display: grid;
   gap: 1rem;
 }
-.projects-grid {
+.featured-grid {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
-.project-card img {
+.activity-list {
+  list-style: none;
+  padding: 0;
+}
+.activity-list li {
+  margin-bottom: 0.5rem;
+}
+.topic-section {
+  margin: 2rem 0;
+}
+.topic-cards {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.topic-card img, .featured-card img, .project-card img {
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
   display: block;
 }
+.gallery-strip {
+  display: flex;
+  overflow-x: auto;
+  gap: 0.5rem;
+}
+.gallery-strip img {
+  height: 120px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+/* Centered home layout and consistent headings */
+.home-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem 1rem 2.5rem;
+}
+
+.featured,
+.activity,
+.topic-section,
+.gallery,
+.from-blog {
+  margin: 2.5rem 0;
+}
+
+/* Section headings */
+.featured > h2,
+.activity > h2,
+.topic-section > h2,
+.gallery > h2,
+.from-blog > h2 {
+  text-align: center;
+  margin: 0 0 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: clamp(1.6rem, 2.2vw, 2rem);
+}
+
+/* Center the "view all" link */
+.from-blog p:last-child {
+  text-align: center;
+}
+
+/* Center post lists under their headings */
+.activity,
+.from-blog {
+  text-align: center;
+}
+
+.activity .activity-list,
+.from-blog .activity-list {
+  display: inline-block;
+  text-align: left;
+}
+
