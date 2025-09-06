@@ -1,0 +1,2 @@
+---
+BUNDLE_BUILD__RMAGICK: "--with-opt-dir=C:/Ruby32-x64/msys64/ucrt64"
