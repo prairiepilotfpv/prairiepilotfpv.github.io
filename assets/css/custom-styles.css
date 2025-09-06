@@ -11,12 +11,47 @@
 }
 
 /* =========================================================
-   Post previews
+   Headings
    ========================================================= */
 
-/* Make preview images round */
-.post-preview .post-image img {
-  border-radius: 50%;
+/* Headings */
+h1 {
+  color: #3F2811;
+}
+
+/* H1 in post header */
+.post-heading h1 {
+  color: #3F2811;
+  text-shadow:
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+}
+
+/* Center all headers in blog posts */
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+  text-align: center;
+}
+
+/* =========================================================
+   Typography (sizes)
+   ========================================================= */
+
+/* Site title */
+.navbar-custom .navbar-brand {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+/* Menu links */
+.navbar-custom .navbar-nav .nav-link {
+  font-size: 1.05rem;
 }
 
 /* =========================================================
@@ -37,6 +72,126 @@
 .navbar-custom .navbar-nav .nav-link:hover,
 .navbar-custom .navbar-nav .nav-link:focus {
   color: #0085A1;
+}
+
+/* =========================================================
+   Logos
+   ========================================================= */
+
+/* Logo image */
+.navbar-brand-logo img {
+  height: 32px;
+}
+
+/* =========================================================
+   Post previews
+   ========================================================= */
+
+/* Make preview images round */
+.post-preview .post-image img {
+  border-radius: 50%;
+}
+
+/* =========================================================
+   Home
+   ========================================================= */
+
+/* Hero container */
+.home-hero {
+  text-align: center;
+  padding: 96px 16px 64px; /* px units instead of rem */
+}
+
+/* Spacing for buttons inside hero */
+.home-hero .btn {
+  margin: 0 8px; /* px units instead of rem */
+}
+
+/* Row container to keep buttons side-by-side */
+.home-hero__buttons {
+  display: inline-flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  flex-wrap: wrap; /* wrap on small screens */
+}
+
+/* Image-backed buttons on the hero */
+.home-hero .btn-image {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 110px;
+  padding: 0; /* let the background show fully */
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: 0; /* sits below overlay text */
+}
+
+/* Subtle overlay for readability */
+.home-hero .btn-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35));
+}
+
+/* Ensure text sits above the overlay */
+.home-hero .btn-image span { position: relative; z-index: 1; }
+
+/* Hover affordance */
+.home-hero .btn-image:hover,
+.home-hero .btn-image:focus {
+  transform: scale(1.02);
+  text-decoration: none;
+}
+
+/* Specific background images for each button */
+.home-hero .btn-blog {
+  background-image: url('/assets/img/julier/julier-thumb.jpg');
+}
+
+.home-hero .btn-projects {
+  background-image: url('/assets/img/march/march-28-blog-stacks-1.jpg');
+}
+
+/* Hero heading sizing */
+.home-hero h1 {
+  font-size: 32px; /* px default instead of clamp */
+  margin: 0 0 0.5rem;
+}
+
+/* Responsive hero heading sizes (px) */
+@media (min-width: 768px) {
+  .home-hero h1 { font-size: 40px; }
+}
+@media (min-width: 1200px) {
+  .home-hero h1 { font-size: 48px; }
+}
+
+/* Magazine-style homepage styles */
+.projects-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.project-card img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  display: block;
 }
 
 /* =========================================================
@@ -115,50 +270,6 @@ footer a:focus {
 }
 
 /* =========================================================
-   Headings
-   ========================================================= */
-
-/* Headings */
-h1 {
-  color: #3F2811;
-}
-
-/* H1 in post header */
-.post-heading h1 {
-  color: #3F2811;
-  text-shadow:
-    -1px -1px 0 #fff,
-    1px -1px 0 #fff,
-    -1px 1px 0 #fff,
-    1px 1px 0 #fff;
-}
-
-/* Center all headers in blog posts */
-.post-content h1,
-.post-content h2,
-.post-content h3,
-.post-content h4,
-.post-content h5,
-.post-content h6 {
-  text-align: center;
-}
-
-/* =========================================================
-   Typography (sizes)
-   ========================================================= */
-
-/* Site title */
-.navbar-custom .navbar-brand {
-  font-size: 1.6rem;
-  font-weight: 700;
-}
-
-/* Menu links */
-.navbar-custom .navbar-nav .nav-link {
-  font-size: 1.05rem;
-}
-
-/* =========================================================
    Responsive tweaks
    ========================================================= */
 
@@ -171,61 +282,4 @@ h1 {
   .navbar-custom .navbar-nav .nav-link {
     font-size: 0.95rem;
   }
-}
-
-/* =========================================================
-   Logos
-   ========================================================= */
-
-  /* Logo image */
-  .navbar-brand-logo img {
-    height: 32px;
-  }
-
-/* =========================================================
-   Home hero
-   ========================================================= */
-
-/* Hero container */
-.home-hero {
-  text-align: center;
-  padding: 96px 16px 64px; /* px units instead of rem */
-}
-
-/* Spacing for buttons inside hero */
-.home-hero .btn {
-  margin: 0 8px; /* px units instead of rem */
-}
-
-/* Hero heading sizing */
-.home-hero h1 {
-  font-size: 32px; /* px default instead of clamp */
-  margin: 0 0 0.5rem;
-}
-
-/* Responsive hero heading sizes (px) */
-@media (min-width: 768px) {
-  .home-hero h1 { font-size: 40px; }
-}
-@media (min-width: 1200px) {
-  .home-hero h1 { font-size: 48px; }
-}
-
-/* =========================================================
-   Home (migrated from assets/css/home.css)
-   ========================================================= */
-
-/* Magazine-style homepage styles */
-.projects-grid {
-  display: grid;
-  gap: 1rem;
-}
-.projects-grid {
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-}
-.project-card img {
-  width: 100%;
-  aspect-ratio: 16/9;
-  object-fit: cover;
-  display: block;
 }
