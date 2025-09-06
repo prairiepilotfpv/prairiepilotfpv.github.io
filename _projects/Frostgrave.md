@@ -15,7 +15,7 @@ After a year of, if I'm honest, farting around, I finally found the focus and or
 ---
 # Frostgrave Homebrew Lore
 
-[Warband - Keldor The Summoner](/projects/frostgrave/Keldor)
+[Warband - Keldor The Summoner](/projects/frostgrave/Keldor/)
 
 
 ---
