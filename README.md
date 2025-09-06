@@ -1,5 +1,10 @@
 # Prairie Pilot FPV
 
+Static site for the Prairie Pilot FPV project.
+
+- Authoring guide: [docs/Authoring.md](docs/Authoring.md)
+- Development and deployment: [docs/Development.md](docs/Development.md)
+
 ## Front Matter Conventions
 
 Use these optional keys in posts, projects, or features to integrate with the magazine-style homepage:
@@ -48,3 +53,5 @@ npm run build:opt
 Preview the optimized site by serving the `./_site/` folder locally (for example, using VS Code Live Server).
 
 GitHub Pages' default builder doesn't run Jampack; the CI workflow handles optimization on deploy.
+
+<!-- Intentionally left blank -->
