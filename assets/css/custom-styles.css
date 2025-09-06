@@ -1,122 +1,70 @@
 /* assets/css/custom-styles.css */
 
-/* Custom styles for images with border */
+/* Border utility for images */
 .img-border {
   border: 5px solid #3B2F01;
   border-radius: 10px;
 }
 
-/* Custom CSS to make preview images round */
-.post-preview .post-image img {
-  border-radius: 50%;
-}
+/* Make preview images round */
+.post-preview .post-image img { border-radius: 50%; }
 
-
-/* Custom Navbar Styles */
+/* Navbar */
 .navbar-custom {
-  background-color: #EAEAEA; /* Light grey background */
-  border-bottom: 1px solid #DDDDDD; /* Light grey border */
+  background-color: #EAEAEA; /* Light grey */
+  border-bottom: 1px solid #DDDDDD;
 }
-
 .navbar-custom .navbar-brand,
-.navbar-custom .navbar-nav .nav-link {
-  color: #404040; /* Dark text for contrast */
-}
-
+.navbar-custom .navbar-nav .nav-link { color: #404040; }
 .navbar-custom .navbar-nav .nav-link:hover,
-.navbar-custom .navbar-nav .nav-link:focus {
-  color: #0085A1; /* Match theme hover color */
-}
+.navbar-custom .navbar-nav .nav-link:focus { color: #0085A1; }
 
-/* Custom Footer Styles */
+/* Footer */
 footer {
-  background-color: #EAEAEA; /* Light grey background */
-  color: #404040; /* Dark text for contrast */
+  background-color: #EAEAEA;
+  color: #404040;
 }
-
-footer a {
-  color: #404040; /* Dark links */
-}
-
+footer a { color: #404040; }
 footer a:hover,
-footer a:focus {
-  color: #0085A1; /* Match theme hover color */
-}
+footer a:focus { color: #0085A1; }
 
-/* Social Media Buttons */
+/* Social buttons */
 .footer-links .list-inline-item a {
-  color: transparent; /* back to original */
+  color: inherit;
   text-decoration: none;
 }
-
-.footer-links .list-inline-item a:hover,
-.footer-links .list-inline-item a:focus {
-  color: #FFD700; /* back to original hover/focus */
-}
-
-/* Specific Colors for Social Media Platforms */
+/* Platform hover colours */
 .footer-links .list-inline-item a.email:hover,
-.footer-links .list-inline-item a.email:focus {
-  color: #D44638; /* Gmail red */
-}
-
+.footer-links .list-inline-item a.email:focus { color: #D44638; }
 .footer-links .list-inline-item a.github:hover,
-.footer-links .list-inline-item a.github:focus {
-  color: #333; /* GitHub black */
-}
-
+.footer-links .list-inline-item a.github:focus { color: #333; }
 .footer-links .list-inline-item a.twitter:hover,
-.footer-links .list-inline-item a.twitter:focus {
-  color: #1DA1F2; /* Twitter blue */
-}
-
+.footer-links .list-inline-item a.twitter:focus { color: #1DA1F2; }
 .footer-links .list-inline-item a.facebook:hover,
-.footer-links .list-inline-item a.facebook:focus {
-  color: #3b5998; /* Facebook blue */
-}
-
+.footer-links .list-inline-item a.facebook:focus { color: #3b5998; }
 .footer-links .list-inline-item a.linkedin:hover,
-.footer-links .list-inline-item a.linkedin:focus {
-  color: #0077B5; /* LinkedIn blue */
-}
-
+.footer-links .list-inline-item a.linkedin:focus { color: #0077B5; }
 .footer-links .list-inline-item a.instagram:hover,
-.footer-links .list-inline-item a.instagram:focus {
-  color: #E4405F; /* Instagram gradient */
-}
-
+.footer-links .list-inline-item a.instagram:focus { color: #E4405F; }
 .footer-links .list-inline-item a.youtube:hover,
-.footer-links .list-inline-item a.youtube:focus {
-  color: #FF0000; /* YouTube red */
-}
-
+.footer-links .list-inline-item a.youtube:focus { color: #FF0000; }
 .footer-links .list-inline-item a.telegram:hover,
-.footer-links .list-inline-item a.telegram:focus {
-  color: #0088cc; /* Telegram blue */
-}
-
+.footer-links .list-inline-item a.telegram:focus { color: #0088cc; }
 .footer-links .list-inline-item a.discord:hover,
-.footer-links .list-inline-item a.discord:focus {
-  color: #7289DA; /* Discord blurple */
-}
+.footer-links .list-inline-item a.discord:focus { color: #7289DA; }
 
-/* Add specific styles for more social networks as needed */
+/* Headings */
+h1 { color: #3F2811; }
 
-/* Custom style for H1 headings */
-h1 {
-  color: #3F2811; /* Dark brown color */
-}
-
-
-/* Custom style for H1 headings inside post header */
+/* H1 in post header */
 .post-heading h1 {
-  color: #3F2811; /* Dark brown color */
-  text-shadow: 
-    -1px -1px 0 #fff,  
+  color: #3F2811;
+  text-shadow:
+    -1px -1px 0 #fff,
     1px -1px 0 #fff,
     -1px 1px 0 #fff,
-    1px 1px 0 #fff; /* White outline */
-
+    1px 1px 0 #fff;
+}
 
 /* Center all headers in blog posts */
 .post-content h1,
@@ -124,37 +72,22 @@ h1 {
 .post-content h3,
 .post-content h4,
 .post-content h5,
-.post-content h6 {
-  text-align: center;
-}
-  color: #7289DA; /* Discord blurple */
-}
+.post-content h6 { text-align: center; }
 
-/* Add specific styles for more social networks as needed */
-
-/* Custom style for H1 headings */
-h1 {
-  color: #3F2811; /* Dark brown color */
+/* Site title */
+.navbar-custom .navbar-brand {
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
+/* Menu links */
+.navbar-custom .navbar-nav .nav-link { font-size: 1.05rem; }
 
-/* Custom style for H1 headings inside post header */
-.post-heading h1 {
-  color: #3F2811; /* Dark brown color */
-  text-shadow: 
-    -1px -1px 0 #fff,  
-    1px -1px 0 #fff,
-    -1px 1px 0 #fff,
-    1px 1px 0 #fff; /* White outline */
-
-
-/* Center all headers in blog posts */
-.post-content h1,
-.post-content h2,
-.post-content h3,
-.post-content h4,
-.post-content h5,
-.post-content h6 {
-  text-align: center;
+/* Mobile tweak */
+@media (max-width: 576px) {
+  .navbar-custom .navbar-brand { font-size: 1.3rem; }
+  .navbar-custom .navbar-nav .nav-link { font-size: 0.95rem; }
 }
 
+/* Logo image */
+.navbar-brand-logo img { height: 32px; }
