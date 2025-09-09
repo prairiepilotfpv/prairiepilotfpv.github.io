@@ -55,3 +55,19 @@ Preview the optimized site by serving the `./_site/` folder locally (for example
 GitHub Pages' default builder doesn't run Jampack; the CI workflow handles optimization on deploy.
 
 <!-- Intentionally left blank -->
+
+## Deployment (GitHub Pages via Actions)
+
+- Source: repository root on branch `master` or `main`.
+- Workflow: `.github/workflows/pages.yml` builds with Jekyll and deploys to Pages.
+- Optimize step: runs `@divriots/jampack` on the generated `_site` output.
+
+How to use:
+- GitHub → Settings → Pages → Build and deployment → Source: select “GitHub Actions”.
+- Push to `master` (or `main`) and check Actions for a green run named “Build and Deploy GitHub Pages”.
+- Custom domain is set via `CNAME` (currently `icantstoptalking.com`).
+
+## Repository housekeeping
+
+- Large file cleanup: `webpage.zip` has been removed from git history to keep the repo lean. It is ignored by `.gitignore` to avoid re‑adding it.
+- If you still have local clones elsewhere, run `git fetch --all` then force‑reset to the updated branch (after the force‑push from this repo).

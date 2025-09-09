@@ -1,8 +1,8 @@
-name: Build & Deploy (Jekyll + Jampack)
+name: Build and Deploy GitHub Pages
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "master" ]
   workflow_dispatch:
 
 permissions:
@@ -27,23 +27,24 @@ jobs:
           ruby-version: '3.3'
           bundler-cache: true
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 'lts/*'
-          cache: 'npm'
+          node-version: '20'
 
-      - name: Install deps
-        run: |
-          bundle install
-          npm ci
+      - name: Install npm deps
+        run: npm ci
 
-      - name: Build Jekyll
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build site (Jekyll)
+        env:
+          JEKYLL_ENV: production
         run: bundle exec jekyll build --trace
 
-      - name: Optimize with Jampack
-        # Minify and generate responsive srcsets
-        run: npx jampack _site
+      - name: Optimize static output (Jampack)
+        run: npm run optimize
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
