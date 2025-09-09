@@ -8,6 +8,10 @@
 # My changes or fixes
 remote_theme: daattali/beautiful-jekyll@6.0.1
 url: "https://icantstoptalking.com"
+# Explicitly set baseurl for GitHub Pages builds (empty for root domain)
+baseurl: ""
+# Help jekyll-github-metadata detect the repository in CI
+repository: "prairiepilotfpv/prairiepilotfpv.github.io"
 
 ############################
 # --- Required options --- #
