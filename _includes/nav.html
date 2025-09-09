@@ -19,14 +19,24 @@
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
               {%- for childlink in link[1] -%}
                 {%- for linkparts in childlink %}
-                  <a class="dropdown-item" href="{{ linkparts[1] | relative_url }}">{{ linkparts[0] }}</a>
+                  {%- assign child_url = linkparts[1] -%}
+                  {%- assign child_external = false -%}
+                  {%- if child_url contains '://' or child_url contains 'mailto:' -%}
+                    {%- assign child_external = true -%}
+                  {%- endif -%}
+                  <a class="dropdown-item" href="{% if child_external %}{{ child_url }}{% else %}{{ child_url | relative_url }}{% endif %}" {% if child_external %}target="_blank" rel="noopener noreferrer"{% endif %}>{{ linkparts[0] }}</a>
                 {%- endfor -%}
               {%- endfor %}
             </div>
           </li>
         {% else %}
           <li class="nav-item">
-            <a class="nav-link" href="{{ link[1] | relative_url }}">{{ link[0] }}</a>
+            {%- assign url = link[1] -%}
+            {%- assign is_external = false -%}
+            {%- if url contains '://' or url contains 'mailto:' -%}
+              {%- assign is_external = true -%}
+            {%- endif -%}
+            <a class="nav-link" href="{% if is_external %}{{ url }}{% else %}{{ url | relative_url }}{% endif %}" {% if is_external %}target="_blank" rel="noopener noreferrer"{% endif %}>{{ link[0] }}</a>
           </li>
         {%- endif -%}
       {%- endfor -%}

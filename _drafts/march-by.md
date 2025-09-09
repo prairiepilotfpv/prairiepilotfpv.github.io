@@ -4,7 +4,7 @@ layout: post
 title: March On By
 cover-img:  "/assets/img/march-on/bust_wip_header.jpg"
 thumbnail-img: "/assets/img/march-on/march-on-thumb.jpg"
-category: Blog, Update
+categories: [Blog, Update]
 tags: minis, blog, painting, gaming
 
 ---
@@ -23,7 +23,7 @@ I did take *some* photos, I even tried to write a few blog posts which spurred e
 
 ---
 
-![Busted](/assets/img/march-on/bust_wip_cool_tone_side.jpg#border)
+{% include img.html src="/assets/img/march-on/bust_wip_cool_tone_side.jpg" alt="Busted" border=true %}
 
 ---
 
@@ -33,7 +33,7 @@ It really has been a great way to learn some of the intermediate techniques that
 
 ---
 
-![Classy Like](/assets/img/march-on/march-28-blog-stacks-4.jpg#border)
+{% include img.html src="/assets/img/march-on/march-28-blog-stacks-4.jpg" alt="Classy Like" border=true %}
 
 ---
 
@@ -43,13 +43,13 @@ Well, you saw back near the ides of March, I had printed and mounted a Gyrados f
 
 ---
 
-![Gyraone?](/assets/img/march-on/march-on-gyraclose.jpg#border)
+{% include img.html src="/assets/img/march-on/march-on-gyraclose.jpg" alt="Gyraone?" border=true %}
 
 ---
 
 I know what my hold up is, it's basically done and now I just have to figure out how I'm doing the water base. I have some water effects, and I saw a pretty good idea with common caulk, so it's not like I'm bereft when it comes to making some sort of water base. I simply can't be arsed to sit down with some gloves, some gunk, and see what I can do. All I really  need are some large, smooth shapes and then I'm going to use the water effect and some pretty opaque ink to give it that cell shaded coloring. I'm not going to try a full cartoon look but I want it to be cartoonish. 
 
-![Gryamany!](/assets/img/march-on/gyrados-scramble.jpg#border)
+{% include img.html src="/assets/img/march-on/gyrados-scramble.jpg" alt="Gryamany!" border=true %}
 
 ---
 
@@ -63,18 +63,18 @@ I quickly realized the hanger I used was throwing my level off. I cleaned everyt
 
 ---
 
-![Heavy Guy](/assets/img/march-on/wip-roundup--13-2.jpg#border)
+{% include img.html src="/assets/img/march-on/wip-roundup--13-2.jpg" alt="Heavy Guy" border=true %}
 
 ---
 
 After spending several days working on the bust I felt like I had really gotten a better feel for how mixing and blending works. I also caved and got a nice brush from my local art store. I had this [One Page Rules](https://www.myminifactory.com/object/3d-print-guild-warriors-321965) Guild Warrior with the heavy weapons option all primed and mounted to a handle. I was very frustrated with the delays finishing my Frostgrave warband and just wanted to get some paint down so I decided to take a detour. I was sort of annoyed with my self, I'd really tried to buckle down and focus on my warband, but I think this came together *really* well. 
 
-![Rail Gun](/assets/img/march-on/march-28-blog-stacks-1-2.jpg#border)
+{% include img.html src="/assets/img/march-on/march-28-blog-stacks-1-2.jpg" alt="Rail Gun" border=true %}
 
 
 Everything I tried seemed to just..work. All the colors blended really well, it seemed like layering really locked in for me. I ended up spending a week hyper-focusing on getting every little thing right once I really felt like I knew what I was doing. 
 
-![Good Looking](/assets/img/march-on/wip-roundup--12-2.jpg#border)
+{% include img.html src="/assets/img/march-on/wip-roundup--12-2.jpg" alt="Good Looking" border=true %}
 
 Confidence is often cited as a great source of success. I've always struggled with that, but I did feel it a bit with this model. The brush, the paint, the mini, it all felt familiar and comfortable. I really gave this one everything I've got. I don't mean to be a broken record, but I really learned a lot. I learned what that even feels like, when you know it's just clicking. I was annoyed with my self for starting a new mini at first, but now I'm very glad I took the detour. 
 
@@ -90,7 +90,7 @@ It worked but it was very frustrating. I was ready to print over a dozen soldier
 
 ---
 
-![Bluish](/assets/img/march-on/wip-roundup--01.jpg#border)
+{% include img.html src="/assets/img/march-on/wip-roundup--01.jpg" alt="Bluish" border=true %}
 
 ---
 

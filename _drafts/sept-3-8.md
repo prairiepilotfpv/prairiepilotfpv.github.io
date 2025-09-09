@@ -3,7 +3,7 @@
 layout: post
 title: Weekly Blog
 cover-img:
-category:
+categories:
 tags: [blog,post,update,September]
 
 ---

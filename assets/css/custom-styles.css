@@ -1,122 +1,33 @@
 /* assets/css/custom-styles.css */
 
-/* Custom styles for images with border */
-img[src*="#border"] {
+/* =========================================================
+   Utility: Image borders
+   ========================================================= */
+
+/* Border utility for images */
+.img-border {
   border: 5px solid #3B2F01;
   border-radius: 10px;
 }
 
-/* Custom CSS to make preview images round */
-.post-preview .post-image img {
-  border-radius: 50%;
-}
+/* =========================================================
+   Headings
+   ========================================================= */
 
-
-/* Custom Navbar Styles */
-.navbar-custom {
-  background-color: #001f3f; /* Navy background color */
-  border-bottom: 1px solid #444444; /* Optional darker border color */
-}
-
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-nav .nav-link {
-  color: #FFFFFF; /* White text color */
-}
-
-.navbar-custom .navbar-nav .nav-link:hover,
-.navbar-custom .navbar-nav .nav-link:focus {
-  color: #FFD700; /* Gold color on hover/focus */
-}
-
-/* Custom Footer Styles */
-footer {
-  background-color: #001f3f; /* Navy background color */
-  color: #FFFFFF; /* White text color */
-}
-
-footer a {
-  color: #FFFFFF; /* White links */
-}
-
-footer a:hover,
-footer a:focus {
-  color: #FFD700; /* Gold on hover/focus */
-}
-
-/* Social Media Buttons */
-.footer-links .list-inline-item a {
-  color: transparent; /* Transparent icon color */
-  text-decoration: none;
-}
-
-.footer-links .list-inline-item a:hover,
-.footer-links .list-inline-item a:focus {
-  color: #FFD700; /* Gold color on hover/focus */
-}
-
-/* Specific Colors for Social Media Platforms */
-.footer-links .list-inline-item a.email:hover,
-.footer-links .list-inline-item a.email:focus {
-  color: #D44638; /* Gmail red */
-}
-
-.footer-links .list-inline-item a.github:hover,
-.footer-links .list-inline-item a.github:focus {
-  color: #333; /* GitHub black */
-}
-
-.footer-links .list-inline-item a.twitter:hover,
-.footer-links .list-inline-item a.twitter:focus {
-  color: #1DA1F2; /* Twitter blue */
-}
-
-.footer-links .list-inline-item a.facebook:hover,
-.footer-links .list-inline-item a.facebook:focus {
-  color: #3b5998; /* Facebook blue */
-}
-
-.footer-links .list-inline-item a.linkedin:hover,
-.footer-links .list-inline-item a.linkedin:focus {
-  color: #0077B5; /* LinkedIn blue */
-}
-
-.footer-links .list-inline-item a.instagram:hover,
-.footer-links .list-inline-item a.instagram:focus {
-  color: #E4405F; /* Instagram gradient */
-}
-
-.footer-links .list-inline-item a.youtube:hover,
-.footer-links .list-inline-item a.youtube:focus {
-  color: #FF0000; /* YouTube red */
-}
-
-.footer-links .list-inline-item a.telegram:hover,
-.footer-links .list-inline-item a.telegram:focus {
-  color: #0088cc; /* Telegram blue */
-}
-
-.footer-links .list-inline-item a.discord:hover,
-.footer-links .list-inline-item a.discord:focus {
-  color: #7289DA; /* Discord blurple */
-}
-
-/* Add specific styles for more social networks as needed */
-
-/* Custom style for H1 headings */
+/* Headings */
 h1 {
-  color: #3F2811; /* Dark brown color */
+  color: #3F2811;
 }
 
-
-/* Custom style for H1 headings inside post header */
+/* H1 in post header */
 .post-heading h1 {
-  color: #3F2811; /* Dark brown color */
-  text-shadow: 
-    -1px -1px 0 #fff,  
+  color: #3F2811;
+  text-shadow:
+    -1px -1px 0 #fff,
     1px -1px 0 #fff,
     -1px 1px 0 #fff,
-    1px 1px 0 #fff; /* White outline */
-
+    1px 1px 0 #fff;
+}
 
 /* Center all headers in blog posts */
 .post-content h1,
@@ -128,3 +39,247 @@ h1 {
   text-align: center;
 }
 
+/* =========================================================
+   Typography (sizes)
+   ========================================================= */
+
+/* Site title */
+.navbar-custom .navbar-brand {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+/* Menu links */
+.navbar-custom .navbar-nav .nav-link {
+  font-size: 1.05rem;
+}
+
+/* =========================================================
+   Navbar
+   ========================================================= */
+
+/* Navbar */
+.navbar-custom {
+  background-color: #EAEAEA; /* Light grey */
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link {
+  color: #404040;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover,
+.navbar-custom .navbar-nav .nav-link:focus {
+  color: #0085A1;
+}
+
+/* =========================================================
+   Logos
+   ========================================================= */
+
+/* Logo image */
+.navbar-brand-logo img {
+  height: 32px;
+}
+
+/* =========================================================
+   Post previews
+   ========================================================= */
+
+/* Make preview images round */
+.post-preview .post-image img {
+  border-radius: 50%;
+}
+
+/* =========================================================
+   Home
+   ========================================================= */
+
+/* Hero container */
+.home-hero {
+  text-align: center;
+  padding: 96px 16px 64px; /* px units instead of rem */
+}
+
+/* Spacing for buttons inside hero */
+.home-hero .btn {
+  margin: 0 8px; /* px units instead of rem */
+}
+
+/* Row container to keep buttons side-by-side */
+.home-hero__buttons {
+  display: inline-flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  flex-wrap: wrap; /* wrap on small screens */
+}
+
+/* Image-backed buttons on the hero */
+.home-hero .btn-image {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 110px;
+  padding: 0; /* let the background show fully */
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: 0; /* sits below overlay text */
+}
+
+/* Subtle overlay for readability */
+.home-hero .btn-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35));
+}
+
+/* Ensure text sits above the overlay */
+.home-hero .btn-image span { position: relative; z-index: 1; }
+
+/* Hover affordance */
+.home-hero .btn-image:hover,
+.home-hero .btn-image:focus {
+  transform: scale(1.02);
+  text-decoration: none;
+}
+
+/* Specific background images for each button */
+.home-hero .btn-blog {
+  background-image: url('/assets/img/julier/julier-thumb.jpg');
+}
+
+.home-hero .btn-projects {
+  background-image: url('/assets/img/march/march-28-blog-stacks-1.jpg');
+}
+
+/* Hero heading sizing */
+.home-hero h1 {
+  font-size: 32px; /* px default instead of clamp */
+  margin: 0 0 0.5rem;
+}
+
+/* Responsive hero heading sizes (px) */
+@media (min-width: 768px) {
+  .home-hero h1 { font-size: 40px; }
+}
+@media (min-width: 1200px) {
+  .home-hero h1 { font-size: 48px; }
+}
+
+/* Magazine-style homepage styles */
+.projects-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.project-card img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  display: block;
+}
+
+/* =========================================================
+   Footer
+   ========================================================= */
+
+/* Footer */
+footer {
+  background-color: #EAEAEA;
+  color: #404040;
+}
+
+footer a {
+  color: #404040;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #0085A1;
+}
+
+/* =========================================================
+   Social buttons
+   ========================================================= */
+
+/* Social buttons */
+.footer-links .list-inline-item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Platform hover colours */
+.footer-links .list-inline-item a.email:hover,
+.footer-links .list-inline-item a.email:focus {
+  color: #D44638;
+}
+
+.footer-links .list-inline-item a.github:hover,
+.footer-links .list-inline-item a.github:focus {
+  color: #333;
+}
+
+.footer-links .list-inline-item a.twitter:hover,
+.footer-links .list-inline-item a.twitter:focus {
+  color: #1DA1F2;
+}
+
+.footer-links .list-inline-item a.facebook:hover,
+.footer-links .list-inline-item a.facebook:focus {
+  color: #3b5998;
+}
+
+.footer-links .list-inline-item a.linkedin:hover,
+.footer-links .list-inline-item a.linkedin:focus {
+  color: #0077B5;
+}
+
+.footer-links .list-inline-item a.instagram:hover,
+.footer-links .list-inline-item a.instagram:focus {
+  color: #E4405F;
+}
+
+.footer-links .list-inline-item a.youtube:hover,
+.footer-links .list-inline-item a.youtube:focus {
+  color: #FF0000;
+}
+
+.footer-links .list-inline-item a.telegram:hover,
+.footer-links .list-inline-item a.telegram:focus {
+  color: #0088cc;
+}
+
+.footer-links .list-inline-item a.discord:hover,
+.footer-links .list-inline-item a.discord:focus {
+  color: #7289DA;
+}
+
+/* =========================================================
+   Responsive tweaks
+   ========================================================= */
+
+/* Mobile tweak */
+@media (max-width: 576px) {
+  .navbar-custom .navbar-brand {
+    font-size: 1.3rem;
+  }
+
+  .navbar-custom .navbar-nav .nav-link {
+    font-size: 0.95rem;
+  }
+}

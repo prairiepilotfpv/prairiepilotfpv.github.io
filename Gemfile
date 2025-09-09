@@ -1,19 +1,11 @@
-# frozen_string_literal: true
-
 source "https://rubygems.org"
-gem 'jekyll', '~> 4.3'
-gem 'jekyll-compose', group: [:jekyll_plugins]
-gem 'tzinfo', '2.0.6'
-gem 'tzinfo-data', '1.2023.4'
-gem 'wdm', '>= 0.1.0' if Gem.win_platform?
-gem "jekyll-remote-theme"
-gem "csv"
-gem "base64"
-gem "jekyll-paginate"
-gem "jekyll-sitemap"
-gem 'kramdown-parser-gfm'
-gem 'webrick'
 
+gem "github-pages", group: :jekyll_plugins
 
-# gemspec
+# TZInfo on Windows needs the IANA timezone database packaged via tzinfo-data
+# Restrict to Windows/JRuby platforms to avoid affecting other environments
+gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+# Improve file watching on Windows (avoids polling)
+gem 'wdm', '>= 0.1.0', platforms: [:mingw, :mswin, :x64_mingw]
+gem "faraday-retry"
