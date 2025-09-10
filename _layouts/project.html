@@ -4,3 +4,26 @@ layout: page
 <article class="project-content">
   {{ content }}
 </article>
+
+{%- comment -%}
+  List sibling pages in the same project folder (topic)
+{%- endcomment -%}
+{%- assign parts = page.relative_path | split: '/' -%}
+{%- if parts.size > 2 -%}
+  {%- assign folder = parts[1] -%}
+  {%- assign grouped = site.projects | group_by_exp: 'd', "d.relative_path | split: '/' | slice: 1,1 | first" -%}
+  {%- assign project_group = grouped | where: 'name', folder | first -%}
+  {%- if project_group -%}
+    {%- assign siblings = project_group.items | sort: 'order' -%}
+    <nav class="project-siblings">
+      <h2>In this project</h2>
+      <ul>
+        {%- for d in siblings -%}
+          <li class="project-siblings__item{%- if d.url == page.url -%} is-active{%- endif -%}">
+            <a href="{{ d.url | relative_url }}">{{ d.title }}</a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </nav>
+  {%- endif -%}
+{%- endif -%}

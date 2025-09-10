@@ -1,15 +1,53 @@
----
 layout: page
 title: Projects
 permalink: /projects/
 ---
+{% comment %}
+  Projects Gallery grouped by folder (topic)
+  - Folders inside `_projects/` appear as a single card linking to a landing page
+    (first document in the folder, sorted by `order` if present).
+  - Loose files directly under `_projects/` appear as standalone cards.
+{% endcomment %}
+
+{%- assign grouped = site.projects | group_by_exp: 'doc', "doc.relative_path | split: '/' | slice: 1,1 | first" -%}
+
 <div class="projects-grid">
-  {% for project in site.projects %}
-    <div class="project-card">
-      <a href="{{ project.url | relative_url }}">
-        {% if project.cover %}<img src="{{ project.cover | relative_url }}" alt="{{ project.title }}" loading="lazy" class="project-cover">{% endif %}
-        <h3>{{ project.title }}</h3>
-      </a>
-    </div>
-  {% endfor %}
+  {%- for group in grouped -%}
+    {%- assign key = group.name -%}
+    {%- assign is_file = key contains '.' -%}
+
+    {%- if is_file -%}
+      {%- assign doc = group.items | first -%}
+      {%- assign title = doc.title -%}
+      {%- assign url = doc.url -%}
+      {%- assign image = doc.cover -%}
+      {%- assign subtitle = doc.subtitle -%}
+    {%- else -%}
+      {%- assign items_sorted = group.items | sort: 'order' -%}
+      {%- assign doc = items_sorted | first -%}
+      {%- assign title = key | replace: '-', ' ' | replace: '_', ' ' | capitalize -%}
+      {%- assign url = doc.url -%}
+      {%- assign image = doc.cover -%}
+      {%- assign count = group.items | size -%}
+      {%- assign subtitle = count | append: ' page' -%}
+      {%- if count != 1 -%}
+        {%- assign subtitle = count | append: ' pages' -%}
+      {%- endif -%}
+    {%- endif -%}
+
+    {%- assign has_image = image and image != '' -%}
+    <a class="project-card{% unless has_image %} project-card--noimg{% endunless %}"
+       href="{{ url | relative_url }}"
+       {%- if has_image -%}
+       style="background-image: url('{{ image | relative_url }}')"
+       {%- endif -%}
+    >
+      <span class="project-card__text">
+        <span class="project-card__title">{{ title }}</span>
+        {%- if subtitle and subtitle != '' -%}
+          <span class="project-card__subtitle">{{ subtitle }}</span>
+        {%- endif -%}
+      </span>
+    </a>
+  {%- endfor -%}
 </div>

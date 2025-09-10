@@ -3,6 +3,7 @@ layout: project
 title: One Page Rules
 subtitle: Open table top war gaming!
 permalink: /projects/one-page-rules/
+order: 20
 
 ---
 

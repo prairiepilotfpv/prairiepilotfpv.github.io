@@ -2,6 +2,7 @@
 layout: project
 title: Warhammer 40K
 permalink: /projects/warhammer40k/
+order: 30
 ---
 
 <h1 class="section-heading"><a href="{{ site.baseurl }}/projects/warhammer40k/">Warhammer 40K</a></h1>
