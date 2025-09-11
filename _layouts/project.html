@@ -14,14 +14,16 @@ layout: page
   {%- assign grouped = site.projects | group_by_exp: 'd', "d.relative_path | split: '/' | slice: 1,1 | first" -%}
   {%- assign project_group = grouped | where: 'name', folder | first -%}
   {%- if project_group -%}
-    {%- assign siblings = project_group.items | sort: 'order' -%}
+    {%- assign siblings = project_group.items | sort: 'date' | reverse -%}
     <nav class="project-siblings">
       <h2>In this project</h2>
       <ul>
         {%- for d in siblings -%}
-          <li class="project-siblings__item{%- if d.url == page.url -%} is-active{%- endif -%}">
-            <a href="{{ d.url | relative_url }}">{{ d.title }}</a>
-          </li>
+          {%- unless d.url == page.url -%}
+            <li class="project-siblings__item">
+              <a href="{{ d.url | relative_url }}">{{ d.title }}</a>
+            </li>
+          {%- endunless -%}
         {%- endfor -%}
       </ul>
     </nav>

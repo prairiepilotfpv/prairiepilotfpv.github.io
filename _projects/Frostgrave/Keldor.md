@@ -5,6 +5,7 @@ subtitle: Frostgrave warband lore
 permalink: /projects/frostgrave/Keldor/
 categories: [Frostgrave, Lore]
 tags: [Frostgrave, lore, writing, homebrew, fantasy]
+date: 2024-06-01
 
 ---
 
