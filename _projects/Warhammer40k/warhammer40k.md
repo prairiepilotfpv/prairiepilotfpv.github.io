@@ -9,7 +9,7 @@ date: 2024-03-01
 <h1 class="section-heading"><a href="{{ site.baseurl }}/projects/warhammer40k/">Warhammer 40K</a></h1>
 
 <p>
-Details about the Warhammer 40K project. Here you can add a brief description or introduction.
+I have loved Warhammer since I was first introduced to Warhammer Fantasy Battles in the mid ninties. When I saw the iconic boxes for Warhammer 40k, third edition, I was hooked. While I haven't always been the most fervernt fan, I've had a soft spot for Warhammer for almost as long as I can remember. Not a soft spot, a yearnig, as it was totally out the realm of possiblity for me for a long time. Now that it's common, I've spent the last few years putting my love of Warhammer into action and began playing Warhammer 40k and Warhammer 40k: KilL Team in the last few years. 
 </p>
 
 <!-- Post list for Warhammer 40K category -->
