@@ -31,27 +31,14 @@ After a year of, if I'm honest, farting around, I finally found the focus and or
 {% for post in frostgrave_posts %}
   <li class="post-preview">
     <article>
-      {%- capture thumbnail -%}
-        {% if post.thumbnail-img %}
-          {{ post.thumbnail-img }}
-        {% elsif post.cover-img %}
-          {% if post.cover-img.first %}
-            {{ post.cover-img[0].first.first }}
-          {% else %}
-            {{ post.cover-img }}
-          {% endif %}
-        {% else %}
-        {% endif %}
-      {% endcapture %}
-      {% assign thumbnail = thumbnail | strip %}
+      {%- capture thumbnail -%}{% include teaser.html doc=post %}{%- endcapture -%}
+      {%- assign thumbnail = thumbnail | strip -%}
 
-      {% if thumbnail != "" %}
       <div class="post-image">
         <a href="{{ post.url | relative_url }}" aria-label="Thumbnail">
           <img src="{{ thumbnail | relative_url }}" alt="Post thumbnail">
         </a>
       </div>
-      {% endif %}
 
       <a href="{{ post.url | relative_url }}">
         <h2 class="post-title">{{ post.title | strip_html }}</h2>

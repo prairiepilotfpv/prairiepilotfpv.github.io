@@ -1,0 +1,72 @@
+{%- comment -%}
+  Resolve a teaser image URL for a document.
+  Priority:
+    1) Front matter: `teaser` or `image`
+    2) Legacy fields: `thumbnail-img`, `cover-img`
+    3) First image in content (HTML <img> or Markdown image)
+    4) Default placeholder: `/assets/img/default-teaser.jpg`
+
+  Usage:
+    {% include teaser.html doc=post %}
+
+  Outputs just the URL string (no surrounding markup).
+{%- endcomment -%}
+
+{%- assign d = include.doc | default: page -%}
+{%- assign out = '' -%}
+
+{%- comment -%} 1) New front matter keys {%- endcomment -%}
+{%- if d.teaser and d.teaser != '' -%}
+  {%- assign out = d.teaser -%}
+{%- elsif d.image and d.image != '' -%}
+  {%- if d.image.path -%}
+    {%- assign out = d.image.path -%}
+  {%- elsif d.image.url -%}
+    {%- assign out = d.image.url -%}
+  {%- else -%}
+    {%- assign out = d.image -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- comment -%} 2) Legacy fields used in theme {%- endcomment -%}
+{%- if out == '' -%}
+  {%- if d["thumbnail-img"] and d["thumbnail-img"] != '' -%}
+    {%- assign out = d["thumbnail-img"] -%}
+  {%- elsif d["cover-img"] and d["cover-img"] != '' -%}
+    {%- if d["cover-img"].first -%}
+      {%- assign out = d["cover-img"][0].first.first -%}
+    {%- else -%}
+      {%- assign out = d["cover-img"] -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- comment -%} 3) First image in content: try HTML <img src="..."> {%- endcomment -%}
+{%- if out == '' and d.content -%}
+  {%- assign parts = d.content | split: 'src="' -%}
+  {%- if parts.size > 1 -%}
+    {%- assign after = parts[1] -%}
+    {%- assign out = after | split: '"' | first -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- comment -%} 3b) Try Markdown image ![alt](url) if HTML not found {%- endcomment -%}
+{%- if out == '' and d.content -%}
+  {%- assign mdparts = d.content | split: '![' -%}
+  {%- if mdparts.size > 1 -%}
+    {%- assign afteralt = mdparts[1] -%}
+    {%- assign paren = afteralt | split: '(' -%}
+    {%- if paren.size > 1 -%}
+      {%- assign afterparen = paren[1] -%}
+      {%- assign out = afterparen | split: ')' | first -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- comment -%} 4) Default placeholder {%- endcomment -%}
+{%- if out == '' -%}
+  {%- assign out = include.fallback | default: '/assets/img/default-teaser.jpg' -%}
+{%- endif -%}
+
+{{- out | strip -}}
+
