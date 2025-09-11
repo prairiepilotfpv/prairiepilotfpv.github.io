@@ -15,9 +15,7 @@ permalink: /projects/
 <div class="projects-grid">
   {%- for group in grouped -%}
     {%- assign key = group.name -%}
-    {%- assign is_file = key contains '.' -%}
-
-    {%- if is_file -%}
+    {%- if key contains '.' -%}
       {%- assign doc = group.items | first -%}
       {%- assign title = doc.title -%}
       {%- assign url = doc.url -%}
@@ -42,10 +40,10 @@ permalink: /projects/
       {%- endif -%}
     {%- endif -%}
 
-    {%- assign has_image = image and image != '' -%}
-    <a class="project-card{% unless has_image %} project-card--noimg{% endunless %}"
+    {%- assign image_str = image | append: '' | strip -%}
+    <a class="project-card{% if image_str == '' %} project-card--noimg{% endif %}"
        href="{{ url | relative_url }}"
-       {%- if has_image -%}
+       {%- if image_str != '' -%}
        style="background-image: url('{{ image | relative_url }}')"
        {%- endif -%}
     >

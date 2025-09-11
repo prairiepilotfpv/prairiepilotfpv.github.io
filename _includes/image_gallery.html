@@ -15,10 +15,10 @@
       {%- assign subtitle = item[subtitle_key] -%}
     {%- endif -%}
 
-    {%- assign has_image = image and image != '' -%}
-    <a class="project-card{% unless has_image %} project-card--noimg{% endunless %}"
+    {%- assign image_str = image | append: '' | strip -%}
+    <a class="project-card{% if image_str == '' %} project-card--noimg{% endif %}"
        href="{{ url | relative_url }}"
-       {%- if has_image -%}
+       {%- if image_str != '' -%}
        style="background-image: url('{{ image | relative_url }}')"
        {%- endif -%}
     >
@@ -31,4 +31,3 @@
     </a>
   {%- endfor -%}
 </div>
-
