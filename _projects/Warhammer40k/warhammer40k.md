@@ -1,11 +1,12 @@
 ---
-layout: project
+layout: projects
 title: Warhammer 40K
 permalink: /projects/warhammer40k/
 order: 30
 date: 2024-03-01
 ---
-
+Details about the Warhammer 40K project. Here you can add a brief description or introduction.
+=======
 <h1 class="section-heading"><a href="{{ site.baseurl }}/projects/warhammer40k/">Warhammer 40K</a></h1>
 
 <p>
