@@ -4,7 +4,8 @@ layout: project
 
 {{ content }}
 
-{%- assign project_posts = site.categories[page.title] | default: [] | sort: 'date' | reverse -%}
+{%- assign category_name = page.title -%}
+{%- assign project_posts = site.posts | where_exp: 'p', 'p.categories contains category_name' | sort: 'date' | reverse -%}
 {%- if project_posts.size > 0 -%}
 <h1 class="section-heading">Posts featuring {{ page.title }}</h1>
 
