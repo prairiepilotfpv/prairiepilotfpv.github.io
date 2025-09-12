@@ -16,7 +16,7 @@ layout: page
   {%- if project_group -%}
     {%- assign siblings = project_group.items | sort: 'date' | reverse -%}
     <nav class="project-siblings">
-      <h2>In this project</h2>
+      <h2>Long Form Articles</h2>
       <ul>
         {%- for d in siblings -%}
           {%- unless d.url == page.url -%}

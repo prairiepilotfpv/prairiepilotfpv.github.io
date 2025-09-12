@@ -335,3 +335,59 @@ footer a:focus {
     font-size: 0.95rem;
   }
 }
+
+/* =========================================================
+   Project siblings nav (projects layout)
+   ========================================================= */
+
+/* Container */
+.project-siblings {
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Heading (style as H1) */
+.project-siblings h1,
+.project-siblings h2 {
+  margin: 0 0 0.75rem;
+  /* approximate site H1 size */
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #3F2811;
+  text-align: center;
+}
+
+/* List reset */
+.project-siblings ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Item spacing */
+.project-siblings__item + .project-siblings__item {
+  margin-top: 0.35rem;
+}
+
+/* Links */
+.project-siblings__item a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  color: #404040;
+  text-decoration: none;
+  transition: background-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
+}
+
+.project-siblings__item a:hover,
+.project-siblings__item a:focus {
+  background: #EAEAEA;
+  color: #0085A1;
+}
+
+/* Slight press effect for click/tap */
+.project-siblings__item a:active {
+  transform: translateY(1px);
+}
