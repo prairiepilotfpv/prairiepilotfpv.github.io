@@ -1,5 +1,5 @@
 ---
-layout: projects
+layout: project
 title: Frostgrave
 subtitle: Building our world and warriors of Frostgrave
 permalink: /projects/frostgrave/
