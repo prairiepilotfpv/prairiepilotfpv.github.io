@@ -1,5 +1,5 @@
 ---
-layout: projects
+layout: project
 title: Warhammer 40K
 subtitle: Eternal war and all that...
 permalink: /projects/warhammer40k/
