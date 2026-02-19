@@ -13,27 +13,14 @@ layout: page
   <li class="post-preview">
     <article>
 
-      {%- capture thumbnail -%}
-        {% if post.thumbnail-img %}
-          {{ post.thumbnail-img }}
-        {% elsif post.cover-img %}
-          {% if post.cover-img.first %}
-            {{ post.cover-img[0].first.first }}
-          {% else %}
-            {{ post.cover-img }}
-          {% endif %}
-        {% else %}
-        {% endif %}
-      {% endcapture %}
-      {% assign thumbnail=thumbnail | strip %}
+      {%- capture thumbnail -%}{% include teaser.html doc=post %}{%- endcapture -%}
+      {%- assign thumbnail = thumbnail | strip -%}
 
-      {% if thumbnail != "" %}
       <div class="post-image">
         <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
           <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
         </a>
       </div>
-      {% endif %}
 
       <a href="{{ post.url | absolute_url }}">
         <h2 class="post-title">{{ post.title | strip_html }}</h2>
@@ -101,4 +88,3 @@ layout: page
   {% endif %}
 </ul>
 {% endif %}
-

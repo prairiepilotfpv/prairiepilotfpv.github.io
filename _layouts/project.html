@@ -4,3 +4,59 @@ layout: page
 <article class="project-content">
   {{ content }}
 </article>
+
+{%- comment -%}
+  List sibling pages in the same project folder (topic)
+{%- endcomment -%}
+{%- assign parts = page.relative_path | split: '/' -%}
+{%- if parts.size > 2 -%}
+  {%- assign folder = parts[1] -%}
+  {%- assign grouped = site.projects | group_by_exp: 'd', "d.relative_path | split: '/' | slice: 1,1 | first" -%}
+  {%- assign project_group = grouped | where: 'name', folder | first -%}
+  {%- if project_group -%}
+    {%- assign siblings = project_group.items | sort: 'date' | reverse -%}
+      {%- assign project_posts = site.posts | where_exp: 'p', "p.categories contains folder" | sort: 'date' | reverse -%}
+    {%- assign per_page = page.per_page | default: 5 -%}
+    {%- assign current_page = page.page | default: 1 -%}
+    {%- assign offset = per_page | times: current_page | minus: per_page -%}
+    {%- assign paginated_posts = project_posts | slice: offset, per_page -%}
+    <nav class="project-siblings">
+      <h2>Long Form Articles</h2>
+      <ul>
+        {%- for d in siblings -%}
+          {%- unless d.url == page.url -%}
+            <li class="project-siblings__item">
+              <a href="{{ d.url | relative_url }}">{{ d.title }}</a>
+            </li>
+          {%- endunless -%}
+        {%- endfor -%}
+      </ul>
+    </nav>
+    {%- if paginated_posts.size > 0 -%}
+    <section class="project-posts">
+      <h2>Project Updates</h2>
+      <ul class="posts-list list-unstyled" role="list">
+        {%- for post in paginated_posts -%}
+        <li class="post-preview">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+        {%- endfor -%}
+      </ul>
+      {%- assign total_posts = project_posts | size -%}
+      {%- assign total_pages = total_posts | divided_by: per_page | ceil -%}
+      {%- if total_pages > 1 -%}
+      <nav class="pagination">
+        {%- if current_page > 1 -%}
+          {%- assign prev_page = current_page | minus: 1 -%}
+          <a class="previous" href="{% if prev_page == 1 %}{{ page.url | relative_url }}{% else %}{{ page.url | replace: 'index.html', '' | append: 'page' | append: prev_page | append: '/' | relative_url }}{% endif %}">&laquo; Previous</a>
+        {%- endif -%}
+        {%- if current_page < total_pages -%}
+          {%- assign next_page = current_page | plus: 1 -%}
+          <a class="next" href="{{ page.url | replace: 'index.html', '' | append: 'page' | append: next_page | append: '/' | relative_url }}">Next &raquo;</a>
+        {%- endif -%}
+      </nav>
+      {%- endif -%}
+    </section>
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}
