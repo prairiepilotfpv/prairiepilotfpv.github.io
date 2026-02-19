@@ -15,7 +15,7 @@ layout: page
   {%- assign project_group = grouped | where: 'name', folder | first -%}
   {%- if project_group -%}
     {%- assign siblings = project_group.items | sort: 'date' | reverse -%}
-      {%- assign project_posts = site.categories[folder] | default: [] | sort: 'date' | reverse -%}
+      {%- assign project_posts = site.posts | where_exp: 'p', "p.categories contains folder" | sort: 'date' | reverse -%}
     {%- assign per_page = page.per_page | default: 5 -%}
     {%- assign current_page = page.page | default: 1 -%}
     {%- assign offset = per_page | times: current_page | minus: per_page -%}

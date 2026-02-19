@@ -5,6 +5,11 @@ Static site for the Prairie Pilot FPV project.
 - Authoring guide: [docs/Authoring.md](docs/Authoring.md)
 - Development and deployment: [docs/Development.md](docs/Development.md)
 
+## AI Assistants
+
+- GitHub Copilot / Codex instructions: [docs/copilot-instructions.md](docs/copilot-instructions.md)
+- Claude instructions: [docs/claude.md](docs/claude.md)
+
 ## Front Matter Conventions
 
 Use these optional keys in posts, projects, or features to integrate with the magazine-style homepage:
