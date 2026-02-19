@@ -1,8 +1,13 @@
-# Project
-_site
-.sass-cache
-.vagrant
-rafts/
+# Build output
+_site/
+
+# Dependencies and tool caches
+node_modules/
+.jampack/
+.bundle/
+.jekyll-cache/
+.sass-cache/
+.vagrant/
 
 # Generated images
 assets/generated/
@@ -17,6 +22,8 @@ CHANGELOG.md
 
 # Backups and swap files
 *~
+*.un~
+*.backup
 *.swp
 
 # Drafts to ignore
