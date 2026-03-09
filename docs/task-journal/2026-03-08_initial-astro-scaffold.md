@@ -33,6 +33,8 @@ build/deploy compatibility for GitHub Pages.
 - Updated docs and workflows:
   - `README.md` local workflow/build details
   - `.github/workflows/pages.yml` switched from Jekyll to Astro build
+- Updated governance check behavior:
+  - `scripts/repo-checks.mjs` now checks working-tree changes first when enforcing task journal requirements
 
 ## Verification
 - `npm install`
@@ -64,3 +66,4 @@ build/deploy compatibility for GitHub Pages.
 - [src/pages/index.astro](../../src/pages/index.astro)
 - [src/content/config.ts](../../src/content/config.ts)
 - [.github/workflows/pages.yml](../../.github/workflows/pages.yml)
+- [scripts/repo-checks.mjs](../../scripts/repo-checks.mjs)
