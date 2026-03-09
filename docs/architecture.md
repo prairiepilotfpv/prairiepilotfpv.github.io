@@ -201,6 +201,10 @@ The site rejects generic "SEO blog" design in favor of editorial, media-aware pr
 ### Colors, Typography, Layout
 
 These should be defined in your CSS and documented in [docs/decisions/0001-site-architecture.md](0001-site-architecture.md).
+Current global typography tokens:
+- `--font-heading`: `"Goudy Bookletter 1911", serif`
+- `--font-body`: `"Lora", serif`
+- Google Fonts are loaded once in `src/layouts/BaseLayout.astro`; heading and body assignment is handled in `src/styles/global.css`.
 
 **Update this architecture if**:
 - You establish a color palette

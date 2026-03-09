@@ -1,11 +1,12 @@
 :root {
-  --color-paper: #f7f4ef;
+  --color-paper: #ffffff;
   --color-ink: #1f2428;
   --color-muted: #4d555d;
   --color-border: #d9d2c7;
   --color-panel: #fffcf8;
-  --font-body: "Georgia", "Times New Roman", serif;
-  --font-display: "Arial Narrow", "Franklin Gothic Medium", "Arial", sans-serif;
+  --font-heading: "Goudy Bookletter 1911", serif;
+  --font-body: "Lora", serif;
+  --font-display: var(--font-heading);
 }
 
 *,
@@ -14,18 +15,27 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  font-family: var(--font-body);
+}
+
 body {
   background: radial-gradient(circle at top left, #fffdf8 0%, var(--color-paper) 60%);
   color: var(--color-ink);
-  font-family: var(--font-body);
+  font-optical-sizing: auto;
+  font-weight: 400;
   line-height: 1.6;
   margin: 0;
 }
 
 h1,
 h2,
-h3 {
-  font-family: var(--font-display);
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
   letter-spacing: 0.02em;
   line-height: 1.2;
   margin: 0 0 0.75rem;
