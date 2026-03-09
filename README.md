@@ -6,7 +6,7 @@ A media-forward personal publishing site built with [Astro](https://astro.build)
 
 The High Prairie is organized around five main sections:
 
-- **Home**: Editorial masthead plus recent previews from Art, Words, and Make
+- **Home**: Long-form editorial landing with hero, section overviews, and splash previews for Art, Words, Make, and About
 - **Art**: Visual work, photography, and photo-centric artistic posts
 - **Words**: Essays, blog posts, reflections, and text-first pieces
 - **Make**: Handmade or 3D-printed smoking accessories, crafts, build logs, and process documentation

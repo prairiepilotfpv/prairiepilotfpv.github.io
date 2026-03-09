@@ -1,203 +1,150 @@
 ---
-import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
-
-const byNewest = (a: { data: { date: Date } }, b: { data: { date: Date } }) =>
-  b.data.date.getTime() - a.data.date.getTime();
-
-const [artEntries, wordsEntries, makeEntries] = await Promise.all([
-  getCollection("art").then((entries) => entries.sort(byNewest).slice(0, 2)),
-  getCollection("words").then((entries) => entries.sort(byNewest).slice(0, 2)),
-  getCollection("make").then((entries) => entries.sort(byNewest).slice(0, 2))
-]);
-
-const formatDate = (date: Date): string =>
-  date.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
 ---
 
 <BaseLayout
   title="The High Prairie"
   description="Editorial, visual, and making work across Art, Words, and Make."
 >
-  <header class="masthead">
-    <p class="kicker">The High Prairie</p>
-    <h1>A publishing ground for image, language, and craft.</h1>
-    <p class="deck">
-      Editorial work shaped by place: visual studies in Art, reflective essays in Words,
-      and practical build logs in Make.
-    </p>
-    <nav class="mode-nav" aria-label="Publishing modes">
-      <a href="/art">Art</a>
-      <a href="/words">Words</a>
-      <a href="/make">Make</a>
-    </nav>
-  </header>
-
-  <section class="mode mode-art" aria-labelledby="home-art-heading">
-    <div class="mode-header">
-      <h2 id="home-art-heading"><a href="/art">Art</a></h2>
-      <p>Visual work, photography, and image-led posts.</p>
+  <section class="scroll-section section-hero section--viewport" aria-labelledby="hero-title">
+    <div class="section-inner">
+      <p class="section-kicker">The High Prairie</p>
+      <h1 id="hero-title">A long-form landing page for image, language, and craft.</h1>
+      <p class="section-text">
+        This hero is intentionally a placeholder for a future full-bleed photograph.
+      </p>
+      <div
+        class="hero-placeholder"
+        role="img"
+        aria-label="Hero image placeholder for future homepage photography"
+      >
+        Photo placeholder
+      </div>
     </div>
-    <ul class="entry-list">
-      {
-        artEntries.map((entry) => (
-          <li>
-            <a href={`/art/${entry.slug}`}>
-              <h3>{entry.data.title}</h3>
-              <p>{entry.data.description}</p>
-              <p class="meta">{formatDate(entry.data.date)}</p>
-            </a>
-          </li>
-        ))
-      }
-    </ul>
   </section>
 
-  <section class="mode mode-words" aria-labelledby="home-words-heading">
-    <div class="mode-header">
-      <h2 id="home-words-heading"><a href="/words">Words</a></h2>
-      <p>Essays, notes, and text-led reflection.</p>
+  <section class="scroll-section section-overview" aria-labelledby="overview-title">
+    <div class="section-inner">
+      <h2 id="overview-title">Start with a page</h2>
+      <ul class="overview-list">
+        <li>
+          <h3><a href="/art">Art</a></h3>
+          <p>Visual work, photography, and image-led posts.</p>
+        </li>
+        <li>
+          <h3><a href="/words">Words</a></h3>
+          <p>Essays, reflections, and text-first publishing.</p>
+        </li>
+        <li>
+          <h3><a href="/make">Make</a></h3>
+          <p>Handmade and 3D-printed objects, process notes, and build logs.</p>
+        </li>
+      </ul>
     </div>
-    <ul class="entry-list">
-      {
-        wordsEntries.map((entry) => (
-          <li>
-            <a href={`/words/${entry.slug}`}>
-              <h3>{entry.data.title}</h3>
-              <p>{entry.data.excerpt ?? entry.data.description}</p>
-              <p class="meta">{formatDate(entry.data.date)}</p>
-            </a>
-          </li>
-        ))
-      }
-    </ul>
   </section>
 
-  <section class="mode mode-make" aria-labelledby="home-make-heading">
-    <div class="mode-header">
-      <h2 id="home-make-heading"><a href="/make">Make</a></h2>
-      <p>Handmade and 3D-printed accessories, tools, and process pages.</p>
+  <section class="scroll-section section-splash section--viewport" aria-labelledby="splash-art-title">
+    <div class="section-inner">
+      <h2 id="splash-art-title">Art</h2>
+      <p class="section-text">
+        A visual-first section for photography, studies, and image-led publishing.
+      </p>
+      <p><a class="section-link" href="/art">Enter Art</a></p>
     </div>
-    <ul class="entry-list">
-      {
-        makeEntries.map((entry) => (
-          <li>
-            <a href={`/make/${entry.slug}`}>
-              <h3>{entry.data.title}</h3>
-              <p>{entry.data.description}</p>
-              <p class="meta">
-                {formatDate(entry.data.date)}
-                {entry.data.process ? " • Process log" : ""}
-              </p>
-            </a>
-          </li>
-        ))
-      }
-    </ul>
+  </section>
+
+  <section class="scroll-section section-splash section--viewport" aria-labelledby="splash-words-title">
+    <div class="section-inner">
+      <h2 id="splash-words-title">Words</h2>
+      <p class="section-text">
+        A text-led section for essays, notes, and longer editorial writing.
+      </p>
+      <p><a class="section-link" href="/words">Enter Words</a></p>
+    </div>
+  </section>
+
+  <section class="scroll-section section-splash section--viewport" aria-labelledby="splash-make-title">
+    <div class="section-inner">
+      <h2 id="splash-make-title">Make</h2>
+      <p class="section-text">
+        A process-focused section for practical making, prototypes, and craft logs.
+      </p>
+      <p><a class="section-link" href="/make">Enter Make</a></p>
+    </div>
+  </section>
+
+  <section class="scroll-section section-about" aria-labelledby="about-preview-title">
+    <div class="section-inner">
+      <h2 id="about-preview-title">About</h2>
+      <p class="section-text">
+        The High Prairie is a personal publishing project for visual work, writing, and
+        practical making.
+      </p>
+      <p><a class="section-link" href="/about">Read About</a></p>
+    </div>
   </section>
 </BaseLayout>
 
 <style>
-  .masthead {
-    border-left: 4px solid var(--color-ink);
-    margin-bottom: 2.5rem;
-    max-width: 52rem;
-    padding-left: 1rem;
+  .scroll-section {
+    border-top: 1px solid var(--color-border);
+    padding: 3rem 0;
   }
 
-  .kicker {
+  .section--viewport {
+    min-height: 85vh;
+  }
+
+  .section-inner {
+    margin: 0 auto;
+    max-width: 44rem;
+    text-align: center;
+  }
+
+  .section-kicker {
     color: var(--color-muted);
     letter-spacing: 0.08em;
-    margin-bottom: 0.5rem;
     text-transform: uppercase;
   }
 
-  .deck {
-    max-width: 44rem;
+  .section-text {
+    max-width: 40rem;
   }
 
-  .mode-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    margin-top: 1.25rem;
-  }
-
-  .mode-nav a {
-    border: 1px solid var(--color-border);
-    font-family: var(--font-display);
-    font-size: 0.95rem;
-    letter-spacing: 0.04em;
-    padding: 0.25rem 0.6rem;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-
-  .mode {
-    border-top: 1px solid var(--color-border);
-    padding: 1.5rem 0;
-  }
-
-  .mode-header {
-    align-items: baseline;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem 1rem;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-  }
-
-  .mode-header h2 {
-    margin-bottom: 0;
-  }
-
-  .mode-header h2 a {
-    text-decoration: none;
-  }
-
-  .mode-header p {
+  .hero-placeholder {
+    align-items: center;
+    background: var(--color-panel);
+    border: 1px dashed var(--color-border);
     color: var(--color-muted);
-    margin-bottom: 0;
-    max-width: 36rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.25rem;
+    min-height: 40vh;
+    padding: 1rem;
   }
 
-  .entry-list {
+  .overview-list {
     display: grid;
-    gap: 0.75rem;
+    gap: 1rem;
     list-style: none;
-    margin: 0;
+    margin: 1.25rem 0 0;
     padding: 0;
   }
 
-  .entry-list li {
+  .overview-list li {
     background: var(--color-panel);
     border: 1px solid var(--color-border);
+    padding: 1rem;
   }
 
-  .entry-list a {
-    display: block;
-    padding: 0.9rem 1rem;
-    text-decoration: none;
+  .section-link {
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.25rem;
   }
 
-  .entry-list h3 {
-    font-size: 1rem;
-    margin-bottom: 0.35rem;
-  }
-
-  .entry-list p {
-    margin-bottom: 0.45rem;
-  }
-
-  .meta {
-    color: var(--color-muted);
-    font-size: 0.9rem;
-    margin-bottom: 0;
-  }
-
-  @media (min-width: 860px) {
-    .entry-list {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+  @media (min-width: 760px) {
+    .overview-list {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
 </style>
