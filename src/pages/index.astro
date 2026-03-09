@@ -1,5 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+import heroImage from "../assets/images/index/Hero_banner.jpg";
 ---
 
 <BaseLayout
@@ -8,36 +10,40 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 >
   <section class="scroll-section section-hero section--viewport" aria-labelledby="hero-title">
     <div class="section-inner">
-      <p class="section-kicker">The High Prairie</p>
-      <h1 id="hero-title">A long-form landing page for image, language, and craft.</h1>
-      <p class="section-text">
-        This hero is intentionally a placeholder for a future full-bleed photograph.
-      </p>
-      <div
-        class="hero-placeholder"
-        role="img"
-        aria-label="Hero image placeholder for future homepage photography"
-      >
-        Photo placeholder
+        <!-- hero image wrapper uses break‑out styles to span the viewport
+             while keeping the surrounding text constrained to the centered
+             column -->
+        <div class="hero-wrapper">
+          <Image
+            src={heroImage}
+            alt="Wide prairie under a summer sky"
+            class="hero-photo"
+            widths={[640, 1024, 1600]}
+            sizes="(min-width: 760px) 100vw, 100vw"
+            placeholder="blur"
+            fit="cover"
+            aspectRatio={16 / 9}
+            priority
+          />
+        </div>
       </div>
-    </div>
   </section>
 
   <section class="scroll-section section-overview" aria-labelledby="overview-title">
     <div class="section-inner">
-      <h2 id="overview-title">Start with a page</h2>
+      <h2 id="overview-title">What I do</h2>
       <ul class="overview-list">
         <li>
           <h3><a href="/art">Art</a></h3>
-          <p>Visual work, photography, and image-led posts.</p>
+          <p>Landscapes, portraits, still life</p>
         </li>
         <li>
           <h3><a href="/words">Words</a></h3>
-          <p>Essays, reflections, and text-first publishing.</p>
+          <p> Blogs, essays, poetry</p>
         </li>
         <li>
           <h3><a href="/make">Make</a></h3>
-          <p>Handmade and 3D-printed objects, process notes, and build logs.</p>
+          <p> 3D printing, DIY, design</p>
         </li>
       </ul>
     </div>
@@ -99,6 +105,24 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     margin: 0 auto;
     max-width: 44rem;
     text-align: center;
+  }
+
+  /* hero break‑out styles */
+  .hero-wrapper {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    width: 100vw;
+    height: 60vh; /* adjust as needed for visual balance */
+    overflow: hidden;
+  }
+
+  .hero-photo {
+    display: block;
+    width: 100vw;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 
   .section-kicker {
