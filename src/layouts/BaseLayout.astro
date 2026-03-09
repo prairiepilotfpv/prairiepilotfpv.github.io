@@ -25,8 +25,8 @@ const { title, description = "The High Prairie" } = Astro.props;
     />
   </head>
   <body>
+    <Navigation />
     <div class="shell">
-      <Navigation />
       <main>
         <slot />
       </main>
@@ -39,10 +39,10 @@ const { title, description = "The High Prairie" } = Astro.props;
     margin: 0 auto;
     max-width: 72rem;
     min-height: 100vh;
-    padding: 0 1rem 3rem;
+    padding: 0.75rem 1rem 3rem;
   }
 
   main {
-    padding-top: 1.5rem;
+    padding-top: 0;
   }
 </style>
