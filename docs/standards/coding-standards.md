@@ -43,12 +43,11 @@ styles/typography.css  # Only if used across many components
 ### File Placement Rules
 
 **Components**: `src/components/`
-- Core components (Navigation, Layout, Footer) in root
+- Core components (Navigation, Footer) in root
 - Section-specific components in subdirectories
 ```
 src/components/
 ├── Navigation.astro
-├── Layout.astro
 ├── Footer.astro
 ├── art/
 │   ├── ArticleCard.astro
@@ -85,7 +84,7 @@ src/components/
 ```astro
 ---
 // 1. Imports
-import Layout from '../layouts/Base.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 import Card from '../components/Card.astro';
 import { getCollection } from 'astro:content';
 
@@ -106,10 +105,10 @@ const sorted = allItems.sort((a, b) =>
 ---
 
 <!-- HTML -->
-<Layout>
+<BaseLayout title={title}>
   <h1>{title}</h1>
   {items.map(item => <Card {...item} />)}
-</Layout>
+</BaseLayout>
 
 <style>
   /* Component styles (scoped) */
@@ -248,7 +247,7 @@ h1, h2, h3, h4, h5, h6 {
 
 ### Images
 
-Always use Astro's `<Image>` component:
+Prefer Astro's `<Image>` component for local assets in `src/assets/`:
 
 ```astro
 ---
@@ -258,13 +257,8 @@ import heroImage from '../assets/hero.jpg';
 
 <Image src={heroImage} alt="Hero image" />
 
-<!-- For remote images, use the width/height props -->
-<Image
-  src="https://example.com/image.jpg"
-  alt="Remote image"
-  width={1200}
-  height={800}
-/>
+<!-- For remote-only sources, plain <img> is acceptable -->
+<img src="https://example.com/image.jpg" alt="Remote image" loading="lazy" />
 ```
 
 **Why**:
@@ -383,7 +377,7 @@ import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
 
 // Components
-import Layout from '../layouts/Base.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 import Card from '../components/Card.astro';
 
 // Utils

@@ -204,7 +204,7 @@ This ADR establishes constraints for:
 - How to add new sections (need approval, explain why)
 - How to organize components (in `src/components/`)
 - How to style the site (component-scoped, editorial-focused)
-- How to handle images (use Astro `<Image>`)
+- How to handle images (prefer Astro `<Image>` for local assets; allow plain `<img>` for remote images when appropriate)
 - How to organize content (collections for Art/Words/Make)
 
 See [docs/architecture.md](../architecture.md) for detailed structure.

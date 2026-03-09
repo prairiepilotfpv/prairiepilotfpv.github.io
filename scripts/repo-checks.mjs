@@ -28,6 +28,7 @@ const REQUIRED_DOC_DIRS = [
 ];
 
 const ALLOWED_TOP_LEVEL_DIRS = new Set([
+  ".astro",
   ".github",
   "docs",
   "public",
@@ -66,7 +67,7 @@ const CONTENT_REQUIRED_FIELDS = {
   make: ["title", "date", "description"]
 };
 
-const IGNORE_DIRS = new Set([".git", "node_modules", "dist"]);
+const IGNORE_DIRS = new Set([".astro", ".git", "node_modules", "dist"]);
 
 function exists(relPath) {
   return fs.existsSync(path.join(ROOT, relPath));

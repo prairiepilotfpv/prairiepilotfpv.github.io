@@ -20,15 +20,14 @@ src/
 │   ├── about.astro              # About page (standalone)
 │   └── [utility pages]          # 404, RSS, etc. (justified in architecture updates)
 ├── components/
-│   ├── Navigation.astro         # Main nav (used in Layout)
-│   ├── Layout.astro             # Base page wrapper
-│   ├── Footer.astro             # Footer (optional, used in Layout)
+│   ├── Navigation.astro         # Main nav (used in BaseLayout)
+│   ├── Footer.astro             # Footer (optional, used in BaseLayout)
 │   └── [section-specific]/
 │       ├── ArticleCard.astro    # Reusable card component
 │       ├── [Feature]Header.astro
 │       └── [other components]
 ├── layouts/
-│   ├── Base.astro               # Root layout (if needed)
+│   ├── BaseLayout.astro         # Root page wrapper used by site pages
 │   ├── BlogPost.astro           # For article/essay pages
 │   ├── [SectionName]Post.astro  # For section-specific layouts
 │   └── [other layouts]
@@ -79,7 +78,8 @@ alt: string            # Recommended (image alt text)
 
 **Notes**:
 - Art should be visual-first, with minimal text
-- Use Astro's image component for optimization
+- Prefer Astro's `<Image>` for local assets in `src/assets/`
+- Plain `<img>` is acceptable for remote images when optimization is not practical
 - Image paths relative to `src/assets/` or from URLs
 
 ### Words Collection
@@ -155,7 +155,7 @@ process: boolean       # Optional (is this a process/build log?)
   - Should be consistent across all pages
   - Responsive on mobile/tablet/desktop
 
-- **Layout.astro**: Base page wrapper
+- **BaseLayout.astro** (in `src/layouts/`): Base page wrapper
   - Includes Navigation
   - Handles metadata, SEO basics
   - Scoped styles or global styles

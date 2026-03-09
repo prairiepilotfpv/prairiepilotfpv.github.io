@@ -9,7 +9,7 @@ Testing for The High Prairie follows these principles:
 1. **Build must succeed**: `npm run build` must complete without errors or warnings
 2. **Site must be functional**: Pages render, navigation works, content displays
 3. **Content must be valid**: All Markdown frontmatter is correct, no broken links
-4. **Images must optimize**: The Image component processes all images correctly
+4. **Images handled appropriately**: Local assets use Astro `<Image>` when needed, remote-only images are handled with practical markup
 5. **Manual spot-checking**: Key pages must be reviewed in browser
 
 **We do NOT require**:
@@ -207,7 +207,7 @@ If build time increases significantly, investigate:
 
 ### Image Sizes
 
-The Image component should optimize all images. Verify in the generated `dist/` folder:
+For local assets rendered with Astro `<Image>`, verify optimized outputs in the generated `dist/` folder:
 
 ```bash
 # Check generated image sizes

@@ -121,7 +121,7 @@ Example update:
 ### Component Rules
 1. Single responsibility
 2. Reusability
-3. Image optimization: Use Astro's <Image> component for all img elements
+3. Image handling: Prefer Astro's <Image> for local assets; plain <img> is acceptable for remote-only images when practical
 4. No utility-first CSS: Use scoped component styles instead
 ```
 
@@ -202,7 +202,7 @@ More text.
 ```markdown
 \`\`\`astro
 ---
-import Layout from '../layouts/Base.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 \`\`\`
 
@@ -364,7 +364,7 @@ Update: Remember to add excerpts to new posts.
 **In architecture.md**:
 ```markdown
 ### Styling Philosophy
-- Images: Use Astro's <Image> component for optimization
+- Images: Prefer Astro's <Image> for local assets; allow plain <img> for remote-only cases when practical
 - Layouts: Component-scoped styles preferred
 - Colors: Define in global.css as CSS custom properties
 ```

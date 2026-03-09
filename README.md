@@ -24,10 +24,9 @@ src/
 │   ├── make/                # Make collection entries
 │   └── config.ts            # Collection schemas
 ├── components/
-│   ├── Navigation.astro     # Main navigation
-│   ├── Layout.astro         # Base layout
+│   └── Navigation.astro     # Main navigation
 ├── layouts/
-│   └── BaseLayout.astro     # Shared page layout
+│   └── BaseLayout.astro     # Shared page wrapper (head + nav + main shell)
 ├── pages/
 │   ├── index.astro          # Home page
 │   ├── art/                 # Art hub + post routes

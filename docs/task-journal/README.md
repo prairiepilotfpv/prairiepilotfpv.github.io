@@ -123,7 +123,7 @@ We chose Astro's built-in Image over a standalone sharp plugin because:
 - Simpler maintenance (fewer dependencies)
 
 ## Decisions Made
-- Image component usage: Required for all images in Art collection
+- Image component usage: Prefer Astro `<Image>` for local assets in Art; use plain `<img>` for remote-only images when practical
 - Reason: Ensures consistency and automatic optimization
 - Lazy loading: Enabled by default (good for performance)
 
