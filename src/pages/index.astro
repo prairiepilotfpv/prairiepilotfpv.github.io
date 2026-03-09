@@ -39,11 +39,11 @@ import heroImage from "../assets/images/index/Hero_banner.jpg";
         </li>
         <li>
           <h3><a href="/words">Words</a></h3>
-          <p> Blogs, essays, poetry</p>
+          <p>Blogs, essays, poetry</p>
         </li>
         <li>
           <h3><a href="/make">Make</a></h3>
-          <p> 3D printing, DIY, design</p>
+          <p>3D printing, DIY, design</p>
         </li>
       </ul>
     </div>
@@ -107,6 +107,10 @@ import heroImage from "../assets/images/index/Hero_banner.jpg";
     text-align: center;
   }
 
+  .section-overview .section-inner {
+    max-width: 64rem;
+  }
+
   /* hero break‑out styles */
   .hero-wrapper {
     margin-left: calc(50% - 50vw);
@@ -166,9 +170,4 @@ import heroImage from "../assets/images/index/Hero_banner.jpg";
     text-underline-offset: 0.25rem;
   }
 
-  @media (min-width: 760px) {
-    .overview-list {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
 </style>
