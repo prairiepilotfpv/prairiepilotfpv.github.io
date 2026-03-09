@@ -1,0 +1,81 @@
+---
+const links = [
+  { href: "/", label: "Home" },
+  { href: "/art", label: "Art" },
+  { href: "/words", label: "Words" },
+  { href: "/make", label: "Make" },
+  { href: "/about", label: "About" }
+];
+
+const pathname = Astro.url.pathname.replace(/\/+$/, "") || "/";
+---
+
+<nav class="site-nav" aria-label="Main">
+  <a class="site-title" href="/">The High Prairie</a>
+  <ul>
+    {
+      links.map((link) => {
+        const normalizedHref = link.href.replace(/\/+$/, "") || "/";
+        const isActive = pathname === normalizedHref;
+        return (
+          <li>
+            <a href={link.href} aria-current={isActive ? "page" : undefined}>
+              {link.label}
+            </a>
+          </li>
+        );
+      })
+    }
+  </ul>
+</nav>
+
+<style>
+  .site-nav {
+    align-items: center;
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.25rem 1rem;
+  }
+
+  .site-title {
+    color: var(--color-ink);
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  ul {
+    display: flex;
+    gap: 0.75rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: var(--color-muted);
+    text-decoration: none;
+  }
+
+  a[aria-current="page"] {
+    color: var(--color-ink);
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+  }
+
+  @media (max-width: 700px) {
+    .site-nav {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    ul {
+      flex-wrap: wrap;
+    }
+  }
+</style>

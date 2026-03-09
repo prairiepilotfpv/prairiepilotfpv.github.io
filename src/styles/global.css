@@ -1,0 +1,40 @@
+:root {
+  --color-paper: #f7f4ef;
+  --color-ink: #1f2428;
+  --color-muted: #4d555d;
+  --color-border: #d9d2c7;
+  --color-panel: #fffcf8;
+  --font-body: "Georgia", "Times New Roman", serif;
+  --font-display: "Arial Narrow", "Franklin Gothic Medium", "Arial", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle at top left, #fffdf8 0%, var(--color-paper) 60%);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  margin: 0 0 0.75rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+a {
+  color: inherit;
+}

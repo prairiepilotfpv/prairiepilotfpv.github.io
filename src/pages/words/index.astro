@@ -1,0 +1,49 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const entries = (await getCollection("words")).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
+---
+
+<BaseLayout
+  title="Words | The High Prairie"
+  description="Essays, blog posts, and reflections."
+>
+  <h1>Words</h1>
+  <p>Text-first posts with an editorial focus.</p>
+
+  <ul class="listing">
+    {
+      entries.map((entry) => (
+        <li>
+          <a href={`/words/${entry.slug}`}>
+            <h2>{entry.data.title}</h2>
+            <p>{entry.data.excerpt ?? entry.data.description}</p>
+            <p class="meta">{entry.data.date.toLocaleDateString()}</p>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</BaseLayout>
+
+<style>
+  .listing {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    border-bottom: 1px solid var(--color-border);
+    padding: 1rem 0;
+  }
+
+  .meta {
+    color: var(--color-muted);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+</style>

@@ -1,78 +1,168 @@
-# Prairie Pilot FPV
+# The High Prairie
 
-Static site for the Prairie Pilot FPV project.
+A media-forward personal publishing site built with [Astro](https://astro.build). The project emphasizes editorial, visual storytelling over generic SEO-driven design.
 
-- Authoring guide: [docs/Authoring.md](docs/Authoring.md)
-- Development and deployment: [docs/Development.md](docs/Development.md)
+## About
 
-## AI Assistants
+The High Prairie is organized around five main sections:
 
-- GitHub Copilot / Codex instructions: [docs/copilot-instructions.md](docs/copilot-instructions.md)
-- Claude instructions: [docs/claude.md](docs/claude.md)
+- **Home**: Entry point and site overview
+- **Art**: Visual work, photography, and photo-centric artistic posts
+- **Words**: Essays, blog posts, reflections, and text-first pieces
+- **Make**: Handmade or 3D-printed smoking accessories, crafts, build logs, and process documentation
+- **About**: Project information and contact details
 
-## Front Matter Conventions
+Each section has its own content collection with dedicated layouts and styling.
 
-Use these optional keys in posts, projects, or features to integrate with the magazine-style homepage:
-
-```
-cover: /assets/covers/<file>.jpg
-featured: true
-categories: FPV
-# or
-# tags: [FPV]
-```
-
-Items marked `featured: true` appear in the homepage's featured section.
-`categories` or `tags` are used to populate topic sections.
-
-## Development
-
-Install Ruby 3.3+, Bundler 2.7+, and Node.js 18+.
-
-Run the site locally with:
+## Project Structure
 
 ```
-bundle install
+src/
+├── content/
+│   ├── art/                 # Art collection entries
+│   ├── words/               # Words collection entries
+│   ├── make/                # Make collection entries
+│   └── config.ts            # Collection schemas
+├── components/
+│   ├── Navigation.astro     # Main navigation
+│   ├── Layout.astro         # Base layout
+├── layouts/
+│   └── BaseLayout.astro     # Shared page layout
+├── pages/
+│   ├── index.astro          # Home page
+│   ├── art/                 # Art hub + post routes
+│   ├── words/               # Words hub + post routes
+│   ├── make/                # Make hub + post routes
+│   └── about.astro          # About page
+└── styles/
+    └── global.css           # Global styling foundation
+```
+
+## Key Documentation
+
+**For AI Agents & Contributors**: Read these first
+- [AGENTS.md](AGENTS.md) — Multi-agent coordination rules (required for all agents)
+- [CLAUDE.md](CLAUDE.md) — Claude-specific guidance and expectations
+- [.github/copilot-instructions.md](.github/copilot-instructions.md) — GitHub Copilot instructions
+
+**Architecture & Decisions**
+- [docs/architecture.md](docs/architecture.md) — Folder structure, content model, extension rules
+- [docs/decisions/0001-site-architecture.md](docs/decisions/0001-site-architecture.md) — Why Astro, why this structure
+
+**Standards & Guidelines**
+- [docs/standards/coding-standards.md](docs/standards/coding-standards.md) — Code style, patterns, naming
+- [docs/standards/testing-standards.md](docs/standards/testing-standards.md) — Testing approach and requirements
+- [docs/standards/documentation-standards.md](docs/standards/documentation-standards.md) — Documentation style and when to document
+- [docs/standards/error-reporting-standards.md](docs/standards/error-reporting-standards.md) — Debugging, evidence-first investigation
+
+**Task Tracking**
+- [docs/task-journal/README.md](docs/task-journal/README.md) — Task entry template and logging guidelines
+
+## Quick Start
+
+### Installation
+
+```bash
 npm install
-bundle exec jekyll serve
 ```
 
-Push your changes to the `main` branch to trigger the GitHub Actions workflow, which builds the site and publishes it to GitHub Pages.
+### Development
 
-## Responsive images via Jampack
-
-Jampack post-processes files in `_site/` to add `srcset`/`sizes`, generate AVIF/WebP versions, create low-quality placeholders, and enable lazy-loading.
-
-### Local usage
-
-Prerequisites: Ruby 3.3+/Jekyll installed and Node 18+.
-
-Commands:
-
+```bash
+npm run dev
 ```
-bundle install
+
+The site will be available at `http://localhost:3000`.
+
+### Build
+
+```bash
+npm run build
+```
+
+Generated static files will be in `dist/`.
+
+### Preview Build
+
+```bash
+npm run preview
+```
+
+## Governance Enforcement Scripts
+
+This repository includes lightweight Node checks to enforce architecture and documentation rules:
+
+- `npm run check:structure` - validates approved folders and naming conventions
+- `npm run check:docs` - validates required docs and task journal compliance
+- `npm run check:content` - validates content collections and frontmatter
+- `npm run verify` - runs all governance checks
+
+Additional script mappings:
+
+- `npm run lint` -> `check:structure`
+- `npm run test` -> `check:docs` + `check:content`
+- `npm run build` -> Astro static build
+
+Recommended local workflow:
+
+```bash
 npm install
-npm run build:opt
+npm run verify
+npm run dev
 ```
 
-Preview the optimized site by serving the `./_site/` folder locally (for example, using VS Code Live Server).
+## Multi-Agent Governance
 
-GitHub Pages' default builder doesn't run Jampack; the CI workflow handles optimization on deploy.
+This repository is maintained by multiple AI coding agents (Claude, GitHub Copilot, Codex). To maintain coherence, every agent must:
 
-<!-- Intentionally left blank -->
+1. **Read the startup checklist** in their agent-specific instructions
+2. **Read the architecture and standards** before making changes
+3. **Document all meaningful changes**
+4. **Log work in the task journal**
+5. **Submit clear PRs** with evidence-based explanations
 
-## Deployment (GitHub Pages via Actions)
+**This is not optional.** Skipping these steps creates technical debt, duplicate abstractions, and architecture drift.
 
-- Source: repository root on branch `master` or `main`.
-- Workflow: `.github/workflows/pages.yml` builds with Jekyll and deploys to Pages.
-- Optimize step: runs `@divriots/jampack` on the generated `_site` output.
+See [AGENTS.md](AGENTS.md) for the full governance rules.
 
-How to use:
-- GitHub → Settings → Pages → Build and deployment → Source: select “GitHub Actions”.
-- Push to `master` (or `main`) and check Actions for a green run named “Build and Deploy GitHub Pages”.
-- Custom domain is set via `CNAME` (currently `icantstoptalking.com`).
+## Adding New Content
 
-## Repository housekeeping
+### Art (Visual Work)
+1. Add your post to `src/content/art/`
+2. Include frontmatter: `title`, `date`, `description`, `image`
+3. Use the Art layout
 
-- Large file cleanup: `webpage.zip` has been removed from git history to keep the repo lean. It is ignored by `.gitignore` to avoid re‑adding it.
-- If you still have local clones elsewhere, run `git fetch --all` then force‑reset to the updated branch (after the force‑push from this repo).
+### Words (Essays & Posts)
+1. Add your post to `src/content/words/`
+2. Include frontmatter: `title`, `date`, `description`, excerpt`
+3. Use the Words layout
+
+### Make (Projects & Crafts)
+1. Add your post to `src/content/make/`
+2. Include frontmatter: `title`, `date`, `description`, `image` (optional)
+3. Use the Make layout
+
+See [docs/architecture.md](docs/architecture.md) for content model details.
+
+## Contributing
+
+Before working on this project:
+
+1. **Read [AGENTS.md](AGENTS.md)** — All contributors must follow these rules
+2. **Choose your agent instructions**:
+   - Claude: [CLAUDE.md](CLAUDE.md)
+   - Copilot: [.github/copilot-instructions.md](.github/copilot-instructions.md)
+   - Codex: Follow [AGENTS.md](AGENTS.md)
+3. **Read [docs/architecture.md](docs/architecture.md)** to understand structure
+4. **Read relevant standards** before coding
+5. **Create a task journal entry** after significant work
+
+**Do not** create new sections, files, or patterns without reading the documentation first.
+
+## License
+
+[Specify your license here]
+
+## Questions?
+
+See the [docs/](docs/) folder for detailed guidance. If something is unclear, file an issue or ask before making changes.

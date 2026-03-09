@@ -21,16 +21,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.3'
-          bundler-cache: true
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
+          cache: "npm"
 
       - name: Install npm deps
         run: npm ci
@@ -38,18 +33,16 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
-      - name: Build site (Jekyll)
-        env:
-          JEKYLL_ENV: production
-        run: bundle exec jekyll build --trace
+      - name: Verify repository rules
+        run: npm run verify
 
-      - name: Optimize static output (Jampack)
-        run: npm run optimize
+      - name: Build site (Astro)
+        run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: _site
+          path: dist
 
   deploy:
     needs: build

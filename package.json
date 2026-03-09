@@ -1,21 +1,21 @@
 {
-  "name": "prairiepilotfpv.github.io",
+  "name": "the-high-prairie",
+  "private": true,
   "version": "1.0.0",
-  "description": "Use these optional keys in posts, projects, or features to integrate with the magazine-style homepage:",
-  "main": "index.js",
+  "description": "The High Prairie - governed Astro publishing site.",
+  "license": "UNLICENSED",
   "scripts": {
-    "build": "bundle exec jekyll build",
-    "optimize": "jampack _site",
-    "build:opt": "npm run build && npm run optimize",
-    "pdf:gallery": "node scripts/build-gallery-instructions.js",
-    "test": "npm run build"
+    "dev": "astro dev",
+    "lint": "node scripts/repo-checks.mjs lint",
+    "test": "node scripts/repo-checks.mjs test",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check:structure": "node scripts/repo-checks.mjs check:structure",
+    "check:docs": "node scripts/repo-checks.mjs check:docs",
+    "check:content": "node scripts/repo-checks.mjs check:content",
+    "verify": "node scripts/repo-checks.mjs verify"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "devDependencies": {
-    "@divriots/jampack": "^0.33.1",
-    "pdfkit": "^0.17.2"
+  "dependencies": {
+    "astro": "^5.0.0"
   }
 }
