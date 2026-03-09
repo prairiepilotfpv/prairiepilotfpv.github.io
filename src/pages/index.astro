@@ -2,12 +2,16 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
 import heroImage from "../assets/images/index/Hero_banner.jpg";
+import artBanner from "../assets/images/index/art_banner.jpg";
+import wordsBanner from "../assets/images/index/writing_banner.jpg";
+import makeBanner from "../assets/images/index/making_banner.jpg";
 ---
 
 <BaseLayout
   title="The High Prairie"
   description="Editorial, visual, and making work across Art, Words, and Make."
 >
+
   <section class="scroll-section section-hero section--viewport" aria-labelledby="hero-title">
     <div class="section-inner">
         <!-- hero image wrapper uses break‑out styles to span the viewport
@@ -20,68 +24,63 @@ import heroImage from "../assets/images/index/Hero_banner.jpg";
             class="hero-photo"
             widths={[640, 1024, 1600]}
             sizes="(min-width: 760px) 100vw, 100vw"
-            placeholder="blur"
-            fit="cover"
-            aspectRatio={16 / 9}
             priority
           />
         </div>
       </div>
   </section>
 
-  <section class="scroll-section section-overview" aria-labelledby="overview-title">
-    <div class="section-inner">
-      <h2 id="overview-title">What I do</h2>
-      <ul class="overview-list">
-        <li>
-          <h3><a href="/art">Art</a></h3>
-          <p>Landscapes, portraits, still life</p>
-        </li>
-        <li>
-          <h3><a href="/words">Words</a></h3>
-          <p>Blogs, essays, poetry</p>
-        </li>
-        <li>
-          <h3><a href="/make">Make</a></h3>
-          <p>3D printing, DIY, design</p>
-        </li>
-      </ul>
-    </div>
-  </section>
-
   <section class="scroll-section section-splash section--viewport" aria-labelledby="splash-art-title">
     <div class="section-inner">
-      <h2 id="splash-art-title">Art</h2>
+      <h1 id="splash-art-title">Art</h1>
       <p class="section-text">
         A visual-first section for photography, studies, and image-led publishing.
       </p>
       <p><a class="section-link" href="/art">Enter Art</a></p>
+      <Image
+        src={artBanner}
+        alt="Art section preview"
+        widths={[640, 768]}
+        sizes="(min-width: 760px) 44rem, 90vw"
+      />
     </div>
   </section>
 
   <section class="scroll-section section-splash section--viewport" aria-labelledby="splash-words-title">
     <div class="section-inner">
-      <h2 id="splash-words-title">Words</h2>
+      <h1 id="splash-words-title">Words</h1>
       <p class="section-text">
         A text-led section for essays, notes, and longer editorial writing.
       </p>
       <p><a class="section-link" href="/words">Enter Words</a></p>
+      <Image
+        src={wordsBanner}
+        alt="Words section preview"
+        widths={[640, 768]}
+        sizes="(min-width: 760px) 44rem, 90vw"
+      />
     </div>
   </section>
 
   <section class="scroll-section section-splash section--viewport" aria-labelledby="splash-make-title">
     <div class="section-inner">
-      <h2 id="splash-make-title">Make</h2>
+      <h1 id="splash-make-title">Make</h1>
       <p class="section-text">
         A process-focused section for practical making, prototypes, and craft logs.
       </p>
       <p><a class="section-link" href="/make">Enter Make</a></p>
+      <Image
+        src={makeBanner}
+        alt="Make section preview"
+        widths={[640, 768]}
+        sizes="(min-width: 760px) 44rem, 90vw"
+      />
     </div>
   </section>
 
   <section class="scroll-section section-about" aria-labelledby="about-preview-title">
     <div class="section-inner">
-      <h2 id="about-preview-title">About</h2>
+      <h1 id="about-preview-title">About</h1>
       <p class="section-text">
         The High Prairie is a personal publishing project for visual work, writing, and
         practical making.
@@ -92,12 +91,8 @@ import heroImage from "../assets/images/index/Hero_banner.jpg";
 </BaseLayout>
 
 <style>
-  .scroll-section {
-    border-top: 1px solid var(--color-border);
-    padding: 3rem 0;
-  }
 
-  .section--viewport {
+.section--viewport {
     min-height: 85vh;
   }
 
@@ -168,6 +163,13 @@ import heroImage from "../assets/images/index/Hero_banner.jpg";
   .section-link {
     text-decoration-thickness: 1px;
     text-underline-offset: 0.25rem;
+  }
+
+  .section-splash img {
+    margin-top: 2rem;
+    border-radius: 4px;
+    width: 100%;
+    height: auto;
   }
 
 </style>
