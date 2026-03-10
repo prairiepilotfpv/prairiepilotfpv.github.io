@@ -32,49 +32,64 @@ import makeBanner from "../assets/images/index/making_banner.jpg";
 
   <section class="scroll-section section-splash section--viewport" aria-labelledby="splash-art-title">
     <div class="section-inner">
-      <h1 id="splash-art-title">Art</h1>
-      <p class="section-text">
-        A visual-first section for photography, studies, and image-led publishing.
-      </p>
-      <p><a class="section-link" href="/art">Enter Art</a></p>
-      <Image
-        src={artBanner}
-        alt="Art section preview"
-        widths={[640, 768]}
-        sizes="(min-width: 760px) 44rem, 90vw"
-      />
+      <div class="splash-media">
+        <Image
+          src={artBanner}
+          alt="Art section preview"
+          class="splash-banner"
+          widths={[640, 768]}
+          sizes="(min-width: 760px) 44rem, 90vw"
+        />
+        <div class="splash-overlay">
+          <h1 id="splash-art-title">Art</h1>
+          <p class="section-text">
+            A visual-first section for photography, studies, and image-led publishing.
+          </p>
+          <p><a class="section-link" href="/art">Enter Art</a></p>
+        </div>
+      </div>
     </div>
   </section>
 
   <section class="scroll-section section-splash section--viewport" aria-labelledby="splash-words-title">
     <div class="section-inner">
-      <h1 id="splash-words-title">Words</h1>
-      <p class="section-text">
-        A text-led section for essays, notes, and longer editorial writing.
-      </p>
-      <p><a class="section-link" href="/words">Enter Words</a></p>
-      <Image
-        src={wordsBanner}
-        alt="Words section preview"
-        widths={[640, 768]}
-        sizes="(min-width: 760px) 44rem, 90vw"
-      />
+      <div class="splash-media">
+        <Image
+          src={wordsBanner}
+          alt="Words section preview"
+          class="splash-banner"
+          widths={[640, 768]}
+          sizes="(min-width: 760px) 44rem, 90vw"
+        />
+        <div class="splash-overlay">
+          <h1 id="splash-words-title">Words</h1>
+          <p class="section-text">
+            A text-led section for essays, notes, and longer editorial writing.
+          </p>
+          <p><a class="section-link" href="/words">Enter Words</a></p>
+        </div>
+      </div>
     </div>
   </section>
 
   <section class="scroll-section section-splash section--viewport" aria-labelledby="splash-make-title">
     <div class="section-inner">
-      <h1 id="splash-make-title">Make</h1>
-      <p class="section-text">
-        A process-focused section for practical making, prototypes, and craft logs.
-      </p>
-      <p><a class="section-link" href="/make">Enter Make</a></p>
-      <Image
-        src={makeBanner}
-        alt="Make section preview"
-        widths={[640, 768]}
-        sizes="(min-width: 760px) 44rem, 90vw"
-      />
+      <div class="splash-media">
+        <Image
+          src={makeBanner}
+          alt="Make section preview"
+          class="splash-banner"
+          widths={[640, 768]}
+          sizes="(min-width: 760px) 44rem, 90vw"
+        />
+        <div class="splash-overlay">
+          <h1 id="splash-make-title">Make</h1>
+          <p class="section-text">
+            A process-focused section for practical making, prototypes, and craft logs.
+          </p>
+          <p><a class="section-link" href="/make">Enter Make</a></p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -165,11 +180,38 @@ import makeBanner from "../assets/images/index/making_banner.jpg";
     text-underline-offset: 0.25rem;
   }
 
-  .section-splash img {
+  .section-splash .splash-media {
     margin-top: 2rem;
+    position: relative;
+  }
+
+  .section-splash .splash-banner {
     border-radius: 4px;
-    width: 100%;
+    display: block;
     height: auto;
+    width: 100%;
+  }
+
+  .section-splash .splash-overlay {
+    align-items: center;
+    background: linear-gradient(to top, rgb(0 0 0 / 78%), rgb(0 0 0 / 28%));
+    border-radius: 4px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    inset: 0;
+    justify-content: center;
+    padding: 1.5rem;
+    position: absolute;
+    text-align: center;
+  }
+
+  .section-splash .splash-overlay .section-text {
+    margin: 0.75rem auto 1rem;
+  }
+
+  .section-splash .splash-overlay .section-link {
+    color: #fff;
   }
 
 </style>
